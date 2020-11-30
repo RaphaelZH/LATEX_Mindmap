@@ -1,0 +1,309 @@
+% -*- coding: utf-8; -*-
+%
+% KÃ¶nnen Sie hiermit Veranstaltungskarten nicht setzen, so liegt es vermutlich
+% daran, dass die Schrift  MinionPro nicht installiert ist --
+% kommentieren Sie in diesem Fall die Zeile 82 aus.
+%
+% Fr 14. Sep 18:07:34 CEST 2012 -- package bookmark added 
+% 3. March 2012 -- summer 2012 -- \ccbyncndeu{}
+% 22. February 2011 -- summer 2011
+% 7. October 2010 - some justification: title
+% 14. February 2010 - cleaning up - MinionPro removed
+% 26. January 2009 - tikzlibraries: fadings, shadows added 
+% 17. July 2008 - some elements deleted
+% 16. July 2008 - wintercalendar
+% 6. June 2008 - kopfmitlogo added
+
+\ProvidesPackage{ddi-map}
+
+\RequirePackage[left=0mm,right=0mm,top=0mm,bottom=0mm,a0paper]{geometry}
+\RequirePackage[pdfborder={0 0 0},pdfpagemode=none]{hyperref}
+\RequirePackage{tikz}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[german]{babel}
+\RequirePackage{translator}
+
+\RequirePackage{bookmark}
+
+\RequirePackage{comment}
+
+\usetikzlibrary{mindmap,trees,backgrounds,arrows,calendar,fadings,shadows}
+
+\tikzset{thin/.style={line width=1pt},
+         thick/.style={line width=2pt},
+         very thick/.style={line width=3pt}}
+
+\tikzset{a0 mindmap/.style=
+  {%
+  concept color=black,text=white,
+  root concept/.style={minimum size=16cm,text
+    width=14cm,font=\fontsize{50}{60}\selectfont\scshape},
+  level 1 concept/.style={%
+    minimum size=9cm,
+    level distance=26cm, 
+    text width=8cm,
+    sibling angle=60,
+    font=\fontsize{28}{36}\selectfont\scshape},%
+  level 2 concept/.style={%
+    minimum size=7cm,%
+    level distance=11.6cm,%
+    text width=6cm,%
+    sibling angle=60,%
+    font=\fontsize{20}{24}\selectfont%
+    },%
+  level 3 concept/.style={%
+    minimum size=4.6cm,%
+    text width=4cm,%
+    level distance=9.6cm,%
+    sibling angle=30,%
+    font=\fontsize{16}{19}\selectfont},%
+  level 4 concept/.style={%
+    minimum size=3.4cm,%
+    text width=2.8cm,
+    level distance=7.4cm,%
+    sibling angle=30,%
+    font=\fontsize{14}{16}\selectfont},%
+  mindmap,%
+  line width=6pt
+}}
+
+\tikzstyle{every concept}=[text=white]
+
+\usepackage{marvosym}
+\usepackage{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+\usepackage{soul,color}  % wg. \hl ... == highlight
+\usepackage{newcent}  % 
+\usepackage{bold-extra} %
+%\usepackage{MinionPro}  % zur Installation: http://tug.ctan.org/fonts/minionpro/MinionPro.pdf
+\usepackage{manfnt} % wg. \dbend \lhdbend  \reversedvideodbend
+\usepackage[clock]{ifsym} % wg. \showclock{ hours }{ minutes }
+\usepackage{phaistos} % wg.  \PHbeehive
+\usepackage{pifont}   % wg. \ding{..} (skalierbar)  \reflectbox{\scalebox{2.5}{\ding{46}}}
+
+\newenvironment{learning targets}
+{\color{.}\list
+  {\textcolor{lecture}{--}}
+  {\topsep=2pt\itemsep=0pt\parsep=0pt\parskip=0pt\labelwidth=8pt\leftmargin=8pt\itemindent=0pt\labelsep=2pt}
+  }
+{\endlist}
+
+% Colors
+\colorlet{lecture}{orange}
+
+\definecolor{medium}{rgb}{.5,.5,.51}
+\definecolor{calendar.bg}{rgb}{.7,.7,.71}
+\definecolor{black75}{rgb}{.25,.25,.26}
+\definecolor{black20}{rgb}{.8,.8,.81}
+
+%
+\newdimen\pictureheight\pictureheight=841mm
+\newdimen\picturewidth\picturewidth=1189mm
+
+% Calendar stuff
+\tikzstyle{holiday}=[medium]
+
+\tikzstyle{tick start left}=[yshift=2.5ex,xshift=-.8ex]
+\tikzstyle{tick start right}=[yshift=2.5ex,xshift=12ex]
+
+\tikzstyle{range pos left}=[xshift=-5.5ex,yshift=1ex,anchor=base east,rotate=90]
+\tikzstyle{range pos right}=[xshift=1.5ex,yshift=1ex,anchor=base west,rotate=-90]
+
+\tikzstyle{lecture pos left}=[anchor=base west]
+\tikzstyle{lecture pos right}=[anchor=base east,xshift=-5ex]
+
+\tikzstyle{start shift left}=[shift=(temp.mid east),yshift=.5ex]
+\tikzstyle{start shift right}=[shift=(temp.mid west),yshift=.5ex]
+
+\def\daytick#1{
+  { \fontsize{10}{12}\selectfont\draw [white,cap=round,thick] ([tick start]cal-#1.base east) -- +(-15.5ex,0pt);}
+}
+
+\def\annotatedrangestart#1#2{
+  {
+    \fontsize{10}{12}\selectfont
+    \daytick{#1} 
+    \node at (cal-#1.base east) [range pos] {\textcolor{white}{\fontsize{20}{24}\selectfont #2}};
+  }
+}
+
+\def\lectureincalendar#1#2{
+  {
+    \fontsize{10}{12}\selectfont
+    \node (temp) at (cal-#1.base east) [lecture pos] {\fontsize{14}{16}\selectfont #2};
+    \coordinate (lecture in cal) at ([start shift]0,0);
+  }
+}
+
+\tikzstyle{every calendar}=[day list downward,
+                            month text=\fontsize{14}{16}\selectfont\color{white}\%mt\ \  \%y0,
+                            day yshift=3.7ex,  %% 3.2ex 
+                            name=cal,
+                            if={(weekend)[holiday]}]
+
+\tikzstyle{calendar left}=[at={(-.5\picturewidth+2cm,.5\pictureheight-2cm)},
+                           if={(day of month=1) { \node at (0pt,3.5ex) [anchor=base west] {\tikzmonthtext}; }}]
+\tikzstyle{calendar right}=[at={(.5\picturewidth-2cm+3ex,.5\pictureheight-2cm)},
+                            if={(day of month=1) { \node at (-5ex,3.5ex) [anchor=base east] {\tikzmonthtext}; }}]
+
+\newenvironment{calendar left}
+{
+  \begin{scope}
+    [
+    tick start/.style={tick start left},
+    range pos/.style={range pos left},
+    start shift/.style={start shift left},
+    lecture pos/.style={lecture pos left},
+    every calendar/.append style=calendar left]
+    \fontsize{10}{12}\selectfont    
+}
+{
+  \end{scope}
+}
+
+\newenvironment{calendar right}
+{
+  \begin{scope}
+    [
+    tick start/.style={tick start right},
+    range pos/.style={range pos right},
+    start shift/.style={start shift right},
+    lecture pos/.style={lecture pos right},
+    every calendar/.append style=calendar right]
+    \fontsize{10}{12}\selectfont    
+}
+{
+  \end{scope}
+}
+
+% The lecture/seminar information
+\tikzoption{filename prefix}{\edef\filenameprefix{#1}}
+
+\tikzstyle{lecture white}=[fill=white,text=black,fill opacity=.6,text opacity=1,drop shadow]
+\tikzstyle{ddi a lecture}=[annotation,
+                           lecture white,
+                           draw=none,
+                           text width=0.055\picturewidth
+                          ]
+
+\tikzstyle{seminar black}=[fill=black,text=white,fill opacity=.5,text opacity=1,drop shadow]
+\tikzstyle{ddi b seminar}=[annotation,
+                           seminar black,
+                           draw=none,
+                           text width=0.055\picturewidth
+                          ]
+%
+\pgfkeys{/ddi/urlprefix/.initial=http://ddi.uni-wuppertal.de}
+
+\tikzstyle{annotation}=[shape=rectangle,
+                        minimum size=0pt,
+                        text width=7cm,
+                        outer sep=3mm,
+                        inner sep=2mm,
+                        text badly ragged,
+                        rounded corners,
+                        text width=6.5cm,
+                        draw=none,
+                        font=\fontsize{8}{10}\selectfont,
+                        every annotation]
+
+\tikzstyle{seminar annotation black}=[annotation,
+                                      connection line/.style={medium},
+                                      fill=black50,
+                                      text=white]
+\tikzstyle{lecture annotation white}=[annotation,
+                                      connection line/.style={white},
+                                      fill=white,
+                                      text=black]
+
+\def\annotation[title=#1,number=#2,#3,#4,url=#5,date=#6]#7;{%
+  \node (lecture-#2) [#3,#4] {%
+    \lecturetitle{#5}{#2 #1}
+    \begin{learning targets}
+      #7
+    \end{learning targets}
+  };
+
+  \lectureincalendar{#6}{#1}
+  \begin{pgfonlayer}{background}
+    \begin{scope}[#3,#4]
+%      \draw [shorten >=-3mm,rounded corners=2mm] [connection line] (lecture in  cal) -| (lecture-#2);
+      \draw [shorten >=-3mm,rounded corners=2mm] (lecture in  cal) -| (lecture-#2);
+    \end{scope}
+  \end{pgfonlayer}
+}
+                   
+% The lecture/seminar information                  
+\newcommand\lecturetitle[2]{\pgfkeysgetvalue{/ddi/urlprefix}{\filenameprefix}%
+  \expandafter\href\expandafter{\filenameprefix/#1}{\lecturetitlenoref{#2}}}
+\newcommand\lecturetitlenoref[1]{{\fontsize{10}{12}\selectfont\textcolor{lecture}{#1}}}
+
+% Above and below the lecture
+\newenvironment{lecture title}
+{
+  \pgf@process{\pgfpointanchor{ddi}{text}}
+  \pgf@ya=\pgf@y
+  \pgf@process{\pgfpointanchor{ddi}{center}}
+  \advance\pgf@ya by-\pgf@y%
+  \advance\pgf@ya by 23mm%
+  \edef\dditempskip{\the\pgf@ya}%
+  \node[text width=30cm,above=\dditempskip,text badly centered,font=\fontsize{14}{16}\selectfont] at (ddi.center)
+  \bgroup
+    Veranstaltungskarte\\[2mm]
+    \color{lecture}
+}
+{
+  \egroup;
+}
+
+\newenvironment{lecture learning targets}
+{
+  \pgf@process{\pgfpointanchor{ddi}{text}}
+  \pgf@ya=\pgf@y
+  \pgf@process{\pgfpointanchor{ddi}{center}}
+  \advance\pgf@ya by-\pgf@y%
+  \advance\pgf@ya by 13mm%
+  \edef\dditempskip{\the\pgf@ya}%
+  \node[text width=10cm,below=\dditempskip,font=\fontsize{8}{10}\selectfont,text badly ragged] at (ddi.center)
+  \bgroup
+  \lecturetitlenoref{Veranstaltungsziele/Kompetenzen}
+  \vspace{2ex} 
+  \begin{learning targets}
+}
+{
+  \end{learning targets}
+\egroup;}
+
+% Extra concepts
+\tikzstyle{every extra concept}=[
+  concept color=medium,font=\scshape\fontsize{20}{24}\selectfont,
+  fill=medium,draw=medium]
+
+\renewcommand\familydefault{\sfdefault}
+
+\newenvironment{map}
+{
+  \begin{center}
+    \begin{tikzpicture}[thin,outer sep=.5\pgflinewidth,inner sep=.3333em]
+      \useasboundingbox [clip] (-.5\picturewidth,-.5\pictureheight) rectangle (.5\picturewidth,.5\pictureheight);
+      \fontsize{20}{24}\selectfont
+}
+{
+  \node [above left=2mm] (where) at (current bounding box.south east)
+  [minimum size=0pt,text width=30cm,shape=rectangle,font=\fontsize{20}{24}\selectfont]
+    {
+      \leftskip 0pt plus 1fill
+	  \begin{center}
+      \includegraphics[scale=0.2]{ABB/uni_logo.pdf}\\[4pt]
+      \includegraphics[scale=0.75]{ABB/ddi-logo.pdf}\\[4pt]
+      \@author\\[4pt]
+      \textcolor{white}{\href{http://ddi.uni-wuppertal.de/}{ddi.uni-wuppertal.de}}\\[4pt]
+      Version vom \today\par Lizenz: \href{http://creativecommons.org/licenses/?lang=de}{\ccbyncndeu{}}
+	  \end{center}
+    };
+    \end{tikzpicture}
+  \end{center}
+}

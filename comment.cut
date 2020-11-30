@@ -1,0 +1,3 @@
+      \info[17]{DHAES256GCMSHA384.south}{anchor=north}{%
+      \item[] \textbf{GCM} cipher mode is an Authenticated Encryption with Associated Data (AEAD), i.e. this cipher mode grants both integrity AND authenticity.
+    }
