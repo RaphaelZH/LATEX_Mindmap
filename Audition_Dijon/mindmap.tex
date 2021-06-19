@@ -69,10 +69,11 @@
 			line width = 0.5em,
 			text width = 40em,
 			text = color0,
-			font = \huge\scshape
+			font = \huge\scshape,
+			inner sep = 2em
 		}
 	]
-	\node [root concept] (Un_modele_de_cout_pour_le_NoSQL)
+	\node [root concept] (Nom_de_projet)
 	at (0em, 0em) {{SYSTÈMES INTELLIGENTS \\POUR LA TRANSMISSION DES \\HUMANITÉS NUMÉRIQUES ET \\POUR LA RECHERCHE EN SANTÉ}};
 \end{scope}
 	
@@ -96,7 +97,7 @@
 				concept color = color1,
 				draw = color1!75,
 				fill = color1!10,
-				line width = 0.5em,
+				line width = 1em,
 				text width = 20em,
 				text = color0,
 				font = \LARGE\scshape,
@@ -121,18 +122,98 @@
 			}
 	]
 
-	\node [root concept, text width = 30em] (logo_UBFC)
+	\node [root concept, text width = 30em] (logo UBFC)
 		at (-30em, 30em)
-			{\includegraphics[width = 0.95\textwidth]{./logos/UBFC.png}}
+			{\includegraphics[width = 0.95\textwidth]{./logos/logo UBFC.png}}
 		child [grow = 0, level distance = 45em, concept color = color1!50]
 			{
-				node [level 1, text width = 30em] (logo_UFC) {\includegraphics[width = 0.9\textwidth]{./logos/UFC.png}}
+				node [level 1, text width = 30em] (logo UFC) {\includegraphics[width = 0.9\textwidth]{./logos/logo UFC.png}}
 			}
 		child [grow = 90, level distance = 45em, concept color = color1!50]
 		{
-			node [level 1, text width = 30em] (logo_LECLA) {\includegraphics[width = 0.9\textwidth]{./logos/LECLA.png}}
-		};
+			node [level 1, text width = 30em] (logo LECLA) {\includegraphics[width = \textwidth]{./logos/logo LECLA.png}}
+		}
+		child [grow = 180, level distance = 48em, concept color = color1!50]
+		{
+			node [level 1, text width = 30em] (logo I-SITE BFC) {\includegraphics[width = 0.7\textwidth]{./logos/logo I-SITE BFC.png}}
+		}
+	;
 \end{scope}
+
+
+
+
+
+
+\begin{scope}
+[
+mindmap,
+text = color0,
+grow cyclic,
+every node/.style =
+{
+	concept,
+	concept color = color4!50,
+	text = color0,
+	execute at begin node = \hskip 0pt
+},
+root concept/.append style =
+{
+	concept color = color4,
+	fill = color4!25,
+	line width = 0.5em,
+	text width = 12em,
+	text = color0,
+	font = \LARGE\scshape
+},
+level 1/.append style =
+{
+	concept color = color4,
+	font = \Large\bfseries,
+	text width = 10em,
+	inner sep = 0pt
+},
+level 2/.append style =
+{
+	concept color = color4!75,
+	font = \large\bfseries,
+	text width = 8em
+}
+]
+
+\node [root concept] (Gestion_des_Donnees)
+at (25em, -25em) {Gestion des Données}
+child [grow = -45, level distance = 20em, concept color = color4!75]
+{
+	node [concept color = color4!75] (Systeme_de_Gestion_des_Metadonnees) {Système de Gestion des Métadonnées}
+	child [grow = -45, level distance = 15em, concept color = color4!50]
+	{
+		node[concept color = color4!50] (Gestion_de_Multiples) {Gestion de Multiples}
+	}
+}
+child [grow = 0, level distance = 20em, concept color = color4!75]
+{
+	node [concept color = color4!75] (Traitement_parallele_des_Donnees_JSON) {Traitement parallèle des Données JSON}
+	child [grow = 0, level distance = 15em, concept color = color4!50]
+	{
+		node[concept color = color4!50] (Regles_de_Reecriture) {Règles de Réécriture}
+	}
+}
+child [grow = -90, level distance = 20em, concept color = color4!75]
+{
+	node [concept color = color4!75] (Requetes_independantes_du_Schema) {Requêtes indépendantes du Schéma}
+	child [grow = -90, level distance = 15em, concept color = color4!50]
+	{
+		node[concept color = color4!50] (Documents_multi-structures) {Documents multi-structurés}
+	}
+}
+;
+\end{scope}
+
+
+
+
+
 
 	\begin{scope}
 		[
@@ -336,70 +417,7 @@
 
 
 
-	\begin{scope}
-		[
-			mindmap,
-			text = color0,
-			grow cyclic,
-			every node/.style =
-				{
-					concept,
-					concept color = color4!50,
-					text = color0,
-					execute at begin node = \hskip 0pt
-				},
-			root concept/.append style =
-				{
-					concept color = color4,
-					fill = color4!25,
-					line width = 0.5em,
-					text width = 12em,
-					text = color0,
-					font = \LARGE\scshape
-				},
-			level 1/.append style =
-				{
-					concept color = color4,
-					font = \Large\bfseries,
-					text width = 10em,
-					inner sep = 0pt
-				},
-			level 2/.append style =
-				{
-					concept color = color4!75,
-					font = \large\bfseries,
-					text width = 8em
-				}
-		]
-
-		\node [root concept] (Gestion_des_Donnees)
-		at (25em, -25em) {Gestion des Données}
-		child [grow = -45, level distance = 20em, concept color = color4!75]
-			{
-				node [concept color = color4!75] (Systeme_de_Gestion_des_Metadonnees) {Système de Gestion des Métadonnées}
-				child [grow = -45, level distance = 15em, concept color = color4!50]
-					{
-						node[concept color = color4!50] (Gestion_de_Multiples) {Gestion de Multiples}
-					}
-			}
-		child [grow = 0, level distance = 20em, concept color = color4!75]
-			{
-				node [concept color = color4!75] (Traitement_parallele_des_Donnees_JSON) {Traitement parallèle des Données JSON}
-				child [grow = 0, level distance = 15em, concept color = color4!50]
-					{
-						node[concept color = color4!50] (Regles_de_Reecriture) {Règles de Réécriture}
-					}
-			}
-		child [grow = -90, level distance = 20em, concept color = color4!75]
-			{
-				node [concept color = color4!75] (Requetes_independantes_du_Schema) {Requêtes indépendantes du Schéma}
-				child [grow = -90, level distance = 15em, concept color = color4!50]
-					{
-						node[concept color = color4!50] (Documents_multi-structures) {Documents multi-structurés}
-					}
-			}
-		;
-	\end{scope}
+	
 
 
 
