@@ -1,0 +1,410 @@
+% Use the standalone as the document class with an option which allows specifying the border.
+\documentclass[border = 10pt]{standalone}
+
+% Allow to entering comfortably English.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french, english]{babel}
+
+
+% 
+\usepackage{xcolor}
+\definecolor{color0}{HTML}{372639}
+\definecolor{color1}{HTML}{C2A4C0}
+\definecolor{color2}{HTML}{816288}
+\definecolor{color3}{HTML}{C6926C}
+\definecolor{color4}{HTML}{D5BEA9}
+\definecolor{color5}{HTML}{DBCAD3}
+
+
+%
+\usepackage{tikz}
+%
+\usetikzlibrary{mindmap}
+%
+\usetikzlibrary{shadows}
+
+\usepackage[hidelinks, pdfencoding = auto]{hyperref}
+
+\usetikzlibrary{backgrounds}
+
+
+% Information boxes
+\newcommand*{\info}[4][16.3]{%
+  \node [ annotation, #3, scale=0.65, text width = #1em,
+          inner sep = 2mm ] at (#2) {%
+  \list{$\bullet$}{\topsep=0pt\itemsep=0pt\parsep=0pt
+    \parskip=0pt\labelwidth=8pt\leftmargin=8pt
+    \itemindent=0pt\labelsep=2pt}%
+    #4
+  \endlist
+  };
+}
+
+\usepackage{wallpaper}
+
+\begin{document}
+	
+
+%\ThisCenterWallPaper{}{A}
+
+\centering
+
+\begin{tikzpicture}
+
+\begin{scope}
+	[
+		mindmap,
+		every node/.style =
+		{
+			concept,
+			execute at begin node = \hskip 0pt
+		},
+		root concept/.append style =
+		{
+			concept color = color0,
+			rectangle,
+			fill = color5!25,
+			line width = 0.5em,
+			text width = 40em,
+			text = color0,
+			font = \huge\scshape
+		}
+	]
+	\node [root concept] (Un_modele_de_cout_pour_le_NoSQL)
+	at (0em, 0em) {{SYSTÈMES INTELLIGENTS \\POUR LA TRANSMISSION DES \\HUMANITÉS NUMÉRIQUES ET \\POUR LA RECHERCHE EN SANTÉ}};
+\end{scope}
+	
+
+
+\begin{scope}
+	[
+		mindmap,
+		text = color0,
+		grow cyclic,
+		every node/.style =
+			{
+				concept,
+				concept color = color1!50,
+				rectangle,
+				rounded corners,
+				text = color0,
+				execute at begin node = \hskip 0pt
+			},
+		root concept/.append style =
+			{
+				concept color = color1,
+				rounded corners = 2em,
+				draw = color1!50,
+				fill = color1!25,
+				line width = 0.5em,
+				text width = 50em,
+				text = color0,
+				font = \LARGE\scshape
+			},
+		level 1/.append style =
+			{
+				concept color = color1,
+				rounded corners = 2em,
+				draw = color1!50,
+				fill = color1!25,
+				line width = 0.5em,
+				text width = 18em,
+				text = color0,
+				font = \Large\bfseries,
+				inner sep = 0pt
+			},
+		level 2/.append style =
+			{
+				concept color = color1!75,
+				font = \large\bfseries,
+				text width = 8em
+			}
+	]
+
+	\node [root concept] (logo_UBFC)
+	at (-25em, 25em)  {\includegraphics[width=\textwidth]{./logos/UBFC.png}}
+	child [grow = 90, level distance = 20em, concept color = color1!75]
+		{
+			node [concept color = color1!25] (logo_UFC) {\includegraphics[width=\textwidth]{./logos/UFC.png}}
+		}
+	child [grow = 180, level distance = 20em, concept color = color1!75]
+		{
+			node [concept color = color1!75] (Apercu_de_la_Performance) {Aperçu de la Performance}
+		}
+	;
+\end{scope}
+
+	\begin{scope}
+		[
+			mindmap,
+			text = color0,
+			grow cyclic,
+			every node/.style =
+				{
+					concept,
+					concept color = color2!50,
+					text = color0,
+					execute at begin node = \hskip 0pt
+				},
+			root concept/.append style =
+				{
+					concept color = color2,
+					fill = color2!25,
+					line width = 0.5em,
+					text width = 12em,
+					text = color0,
+					font = \LARGE\scshape
+				},
+			level 1/.append style =
+				{
+					concept color = color2,
+					font = \Large\bfseries,
+					text width = 10em,
+					inner sep = 0pt
+				},
+			level 2/.append style =
+				{
+					concept color = color2!75,
+					font = \large\bfseries,
+					text width = 8em
+				}
+		]
+		\node [root concept] (Transformation_&_Mirgation)
+		at (-125em, -125em)  {\href{run:PPT3.pdf}{Transformation \& Mirgation}}
+		child [grow = 0, level distance = 20em, concept color = color2!75]
+			{
+				node [concept color = color2!75] (Model_Driven_Architecture_MDA) {Model Driven Architecture (MDA)}
+				%child [grow = 0, level distance = 15em]
+				%{
+				%node[concept] (Niveau_Metamodele) {Niveau Métamodèle}										
+				%}
+				child [grow = 40, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (UML_a_NoSQL) {UML à NoSQL}
+					}
+				child [grow = 0, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (UML_a_HBase) {UML à HBase}
+					}
+				child [grow = -40, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (UML_a_GraphDB) {UML à GraphDB}
+					}
+			}
+		child [grow = 90, level distance = 20em, concept color = color2!75]
+			{
+				node [concept color = color2!75] (Mappage_de_Schema) {Mappage de Schéma}
+				child [grow = 90, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (SQL_a_NoSQL) {SQL à NoSQL}
+					}
+				child [grow = 50, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (SQLCMS_a_NoSQL) {SQL(CMS) à NoSQL}
+					}
+				child [grow = 130, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (SQL_a_HBase) {SQL à \\HBase}
+					}
+				child [grow = -30, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (SQL_a_MongDB) {SQL à MongDB}
+					}
+			}
+		child [grow = 135, level distance = 20em, concept color = color2!75]
+			{
+				node [concept color = color2!75] (Cadre_de_Migration) {Cadre de Migration}
+				child [grow = 135, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (MySQL_a_MongoDB) {MySQL à \\MongoDB}
+					}
+			}
+		child [grow = -45, level distance = 20em, concept color = color2!75]
+			{
+				node [concept color = color2!75] (Plates-formes_Middleware) {Plates-formes Middleware}
+				child [grow = -45, level distance = 15em, concept color = color2!50]
+					{
+						node[concept color = color2!50] (Cassandra_&_MongoDB) {Cassandra \& MongoDB}
+					}
+			}
+		;
+	\end{scope}
+
+	% Applied area: theoretical physics and its subfields
+
+	% Applied area: biology and its subfields
+
+
+
+	\begin{scope}
+		[
+			mindmap,
+			text = color0,
+			grow cyclic,
+			every node/.style =
+				{
+					concept,
+					concept color = color3!50,
+					text = color0,
+					execute at begin node = \hskip 0pt
+				},
+			root concept/.append style =
+				{
+					concept color = color3,
+					fill = color3!25,
+					line width = 0.5em,
+					text width = 12em,
+					text = color0,
+					font = \LARGE\scshape
+				},
+			level 1/.append style =
+				{
+					concept color = color3,
+					font = \Large\bfseries,
+					text width = 10em,
+					inner sep = 0pt
+				},
+			level 2/.append style =
+				{
+					concept color = color3!75,
+					font = \large\bfseries,
+					text width = 8em
+				}
+		]
+
+		\node [root concept] (Modele_de_Cout)
+		at (125em, 125em) {Modèle de Coût}
+		child [grow = -90, level distance = 20em, concept color = color3!75]
+			{
+				node [concept color = color3!75] (Description_Langage) {Description Langage}
+				child [grow = -90, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (CostDL) {CostDL}
+					}
+			}
+		child [grow = 135, level distance = 20em, concept color = color3!75]
+			{
+				node [concept color = color3!75] (Modele_de_Cout_generique) {Modèle de Coût générique}
+				child [grow = 135, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (Systemes_de_Memoire_hierarchiques) {Systèmes de Mémoire hiérarchiques}
+					}
+				child [grow = 175, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (Diversite_et_Interaction) {Diversité et Interaction}
+					}
+				child [grow = 95, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (Environnement_d_Entreposage) {Environnement d'Entreposage}
+					}
+			}
+		child [grow = -45, level distance = 20em, concept color = color3!75]
+			{
+				node [concept color = color3!75] (Construction_d_un_magasin_de_donnees) {Construction d'un magasin de données}
+				child [grow = -45, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (Magasins_de_Donnees_distribues_et_repliques) {Magasins de Données distribués et répliqués}
+					}
+			}
+		child [grow = 0, level distance = 20em, concept color = color3!75]
+			{
+				node [concept color = color3!75] (Apprentissage_automatique) {Apprentissage automatique}
+				child [grow = 0, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (Temps_et_Ressources_consommes) {Temps et Ressources consommés}
+					}
+			}
+		child [grow = 90, level distance = 20em, concept color = color3!75]
+			{
+				node [concept color = color3!75] (Complexite_structurelle) {Complexité structurelle}
+				child [grow = 90, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (JSON_&_MongoDB) {JSON \& MongoDB}
+					}
+			}
+		child [grow = 45, level distance = 20em, concept color = color3!75]
+			{
+				node [concept color = color3!75] (Expressivite_et_Complexite_des_Requetes) {Expressivité et Complexité des Requêtes}
+				child [grow = 45, level distance = 15em, concept color = color3!50]
+					{
+						node[concept] (MongoDB) {MongoDB}
+					}
+			}
+		;
+	\end{scope}
+
+
+
+
+	\begin{scope}
+		[
+			mindmap,
+			text = color0,
+			grow cyclic,
+			every node/.style =
+				{
+					concept,
+					concept color = color4!50,
+					text = color0,
+					execute at begin node = \hskip 0pt
+				},
+			root concept/.append style =
+				{
+					concept color = color4,
+					fill = color4!25,
+					line width = 0.5em,
+					text width = 12em,
+					text = color0,
+					font = \LARGE\scshape
+				},
+			level 1/.append style =
+				{
+					concept color = color4,
+					font = \Large\bfseries,
+					text width = 10em,
+					inner sep = 0pt
+				},
+			level 2/.append style =
+				{
+					concept color = color4!75,
+					font = \large\bfseries,
+					text width = 8em
+				}
+		]
+
+		\node [root concept] (Gestion_des_Donnees)
+		at (25em, -25em) {Gestion des Données}
+		child [grow = -45, level distance = 20em, concept color = color4!75]
+			{
+				node [concept color = color4!75] (Systeme_de_Gestion_des_Metadonnees) {Système de Gestion des Métadonnées}
+				child [grow = -45, level distance = 15em, concept color = color4!50]
+					{
+						node[concept color = color4!50] (Gestion_de_Multiples) {Gestion de Multiples}
+					}
+			}
+		child [grow = 0, level distance = 20em, concept color = color4!75]
+			{
+				node [concept color = color4!75] (Traitement_parallele_des_Donnees_JSON) {Traitement parallèle des Données JSON}
+				child [grow = 0, level distance = 15em, concept color = color4!50]
+					{
+						node[concept color = color4!50] (Regles_de_Reecriture) {Règles de Réécriture}
+					}
+			}
+		child [grow = -90, level distance = 20em, concept color = color4!75]
+			{
+				node [concept color = color4!75] (Requetes_independantes_du_Schema) {Requêtes indépendantes du Schéma}
+				child [grow = -90, level distance = 15em, concept color = color4!50]
+					{
+						node[concept color = color4!50] (Documents_multi-structures) {Documents multi-structurés}
+					}
+			}
+		;
+	\end{scope}
+
+
+
+
+\end{tikzpicture}
+
+\end{document}
