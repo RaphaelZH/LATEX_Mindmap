@@ -64,7 +64,8 @@
 		{
 			concept color = color0,
 			rectangle,
-			fill = color5!25,
+			rounded corners = 2em,
+			fill = color5!10,
 			line width = 0.5em,
 			text width = 40em,
 			text = color0,
@@ -86,28 +87,26 @@
 			{
 				concept,
 				concept color = color1!50,
-				rectangle,
-				rounded corners,
+				%rectangle,
 				text = color0,
 				execute at begin node = \hskip 0pt
 			},
 		root concept/.append style =
 			{
 				concept color = color1,
-				rounded corners = 2em,
-				draw = color1!50,
-				fill = color1!25,
+				draw = color1!75,
+				fill = color1!10,
 				line width = 0.5em,
-				text width = 50em,
+				text width = 20em,
 				text = color0,
-				font = \LARGE\scshape
+				font = \LARGE\scshape,
+				inner sep = 0pt
 			},
 		level 1/.append style =
 			{
 				concept color = color1,
-				rounded corners = 2em,
 				draw = color1!50,
-				fill = color1!25,
+				fill = color1!5,
 				line width = 0.5em,
 				text width = 18em,
 				text = color0,
@@ -122,17 +121,17 @@
 			}
 	]
 
-	\node [root concept] (logo_UBFC)
-	at (-25em, 25em)  {\includegraphics[width=\textwidth]{./logos/UBFC.png}}
-	child [grow = 90, level distance = 20em, concept color = color1!75]
+	\node [root concept, text width = 30em] (logo_UBFC)
+		at (-30em, 30em)
+			{\includegraphics[width = 0.95\textwidth]{./logos/UBFC.png}}
+		child [grow = 0, level distance = 45em, concept color = color1!50]
+			{
+				node [level 1, text width = 30em] (logo_UFC) {\includegraphics[width = 0.9\textwidth]{./logos/UFC.png}}
+			}
+		child [grow = 90, level distance = 45em, concept color = color1!50]
 		{
-			node [concept color = color1!25] (logo_UFC) {\includegraphics[width=\textwidth]{./logos/UFC.png}}
-		}
-	child [grow = 180, level distance = 20em, concept color = color1!75]
-		{
-			node [concept color = color1!75] (Apercu_de_la_Performance) {Aperçu de la Performance}
-		}
-	;
+			node [level 1, text width = 30em] (logo_LECLA) {\includegraphics[width = 0.9\textwidth]{./logos/LECLA.png}}
+		};
 \end{scope}
 
 	\begin{scope}
