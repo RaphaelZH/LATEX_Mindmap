@@ -73,7 +73,7 @@
 			inner sep = 2em
 		}
 	]
-	\node [root concept] (Nom_de_projet)
+	\node [root concept] (Nom de projet)
 	at (0em, 0em) {{SYSTÈMES INTELLIGENTS \\POUR LA TRANSMISSION DES \\HUMANITÉS NUMÉRIQUES ET \\POUR LA RECHERCHE EN SANTÉ}};
 \end{scope}
 	
@@ -130,7 +130,7 @@
 	\node [root concept, text width = 20em] (UBFC)
 		at (-30em, 30em)
 			{\includegraphics[width = 0.95\textwidth]{./logos/logo UBFC.png}}
-		child [grow = 0, level distance = 30em, concept color = color1!50]
+		child [grow = 180, level distance = 30em, concept color = color1!50]
 			{
 				node [level 1, text width = 18em] (UFC) {\includegraphics[width = 0.9\textwidth]{./logos/logo UFC.png}}
 			}
@@ -138,23 +138,44 @@
 			{
 				node [level 1, text width = 18em, inner sep = -0.5em] (I-SITE BFC) {\includegraphics[width = 0.65\textwidth]{./logos/logo I-SITE BFC.png}}
 			}
-		child [grow = 90, level distance = 30em, concept color = color1!50, inner sep = -1em]
+		child [grow = 90, level distance = 30em, concept color = color1!50]
 			{
-				node [level 1, text width = 18em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
+				node [level 1, text width = 18em, inner sep = -1em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
 				child [grow = 45, level distance = 30em, concept color = color1!50]
 				{
 					node [level 2, text width = 16em] (LECLA) {\includegraphics[width = 0.95\textwidth]{./logos/logo LECLA.png}}
 				}
-				child [grow = 90, level distance = 30em, concept color = color1!50, inner sep = 4em]
+				child [grow = 90, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em] (MSH) {\includegraphics[width = \textwidth]{./logos/logo MSH.png}}
+					node [level 2, text width = 16em, inner sep = -1em] (MSH) {\includegraphics[width = 0.85\textwidth]{./logos/logo MSH.png}}
 				}
-				child [grow = 135, level distance = 30em, concept color = color1!50, inner sep = -2em]
+				child [grow = 135, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em] (ELLIADD) {\includegraphics[width = 0.6\textwidth]{./logos/logo ELLIADD.png}}
+					node [level 2, text width = 16em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
 				}
 			}
 		;
+		\begin{pgfonlayer}{background}
+			\draw [densely dashed] 
+				(Nom de projet)
+					edge [color = color1!50, line width = 1em] 
+					node[
+						solid,
+						annotation,
+						right, 
+						concept color = color1,
+						draw = color1!50,
+						fill = color1!5,
+						line width = 0.25em,
+						text width = 20em,
+						text = color0,
+						font = \LARGE\bfseries,
+						inner sep = 1em
+					]
+					{Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
+				(I-SITE BFC)
+				;
+		\end{pgfonlayer}
 \end{scope}
 
 
