@@ -4,8 +4,7 @@
 % Allow to entering comfortably English.
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[french, english]{babel}
-
+\usepackage[french]{babel}
 
 % 
 \usepackage{xcolor}
@@ -65,8 +64,6 @@
 	\node [root concept] (Nom de projet)
 	at (0em, 0em) {{SYSTÈMES INTELLIGENTS \\POUR LA TRANSMISSION DES \\HUMANITÉS NUMÉRIQUES ET \\POUR LA RECHERCHE EN SANTÉ}};
 \end{scope}
-	
-
 
 \begin{scope}
 	[
@@ -77,7 +74,6 @@
 			{
 				concept,
 				concept color = color1!50,
-				%rectangle,
 				text = color0,
 				execute at begin node = \hskip 0pt
 			},
@@ -144,129 +140,244 @@
 				}
 			}
 		;
-		\begin{pgfonlayer}{background}
-			\draw [densely dashed] 
-				(Nom de projet)
-					edge [color = color1!50, line width = 1em] 
+	\begin{pgfonlayer}{background}
+		\draw [densely dashed] 
+			(Nom de projet)
+				edge [color = color1!50, line width = 1em] 
+					node[
+						solid,
+						annotation,
+						right, 
+						concept color = color1,
+						draw = color1!50,
+						fill = color1!5,
+						line width = 0.25em,
+						text width = 20em,
+						text = color0,
+						font = \LARGE\bfseries,
+						inner sep = 1em
+					] {Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
+				(I-SITE BFC)
+				edge [color = color1!50, line width = 1em] 
 						node[
-							solid,
-							annotation,
-							right, 
-							concept color = color1,
-							draw = color1!50,
-							fill = color1!5,
-							line width = 0.25em,
-							text width = 20em,
-							text = color0,
-							font = \LARGE\bfseries,
-							inner sep = 1em
-						] {Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
-					(I-SITE BFC)
-					edge [color = color1!50, line width = 1em] 
-							node[
-							solid,
-							annotation,
-							right, 
-							concept color = color1,
-							draw = color1!50,
-							fill = color1!5,
-							line width = 0.25em,
-							text width = 20em,
-							text = color0,
-							font = \LARGE\bfseries,
-							inner sep = 1em
-						] {Ce projet s'inscrit dans le paradigme de la transmission des pôles thématiques de la fédération des MSH BFC.}
-					(MSH)
-					edge [color = color1!50, line width = 1em] 
-						node[
-							solid,
-							annotation,
-							right, 
-							concept color = color1,
-							draw = color1!50,
-							fill = color1!5,
-							line width = 0.25em,
-							text width = 20em,
-							text = color0,
-							font = \LARGE\bfseries,
-							inner sep = 1em
-						] {Ce projet rattaché au laboratoire ELLIADD, 7 chercheurs ELLIADD travaillent déjà au projet HUMANE.}
-					(ELLIADD)
-			;
-		\end{pgfonlayer}
+						solid,
+						annotation,
+						right, 
+						concept color = color1,
+						draw = color1!50,
+						fill = color1!5,
+						line width = 0.25em,
+						text width = 20em,
+						text = color0,
+						font = \LARGE\bfseries,
+						inner sep = 1em
+					] {Ce projet s'inscrit dans le paradigme de la transmission des pôles thématiques de la fédération des MSH BFC.}
+				(MSH)
+				edge [color = color1!50, line width = 1em] 
+					node[
+						solid,
+						annotation,
+						right, 
+						concept color = color1,
+						draw = color1!50,
+						fill = color1!5,
+						line width = 0.25em,
+						text width = 20em,
+						text = color0,
+						font = \LARGE\bfseries,
+						inner sep = 1em
+					] {Ce projet rattaché au laboratoire ELLIADD, 7 chercheurs ELLIADD travaillent déjà au projet HUMANE.}
+				(ELLIADD)
+				edge [color = color1!50, line width = 1em] 
+					node[
+						solid,
+						annotation,
+						right, 
+						concept color = color1,
+						draw = color1!50,
+						fill = color1!5,
+						line width = 0.25em,
+						text width = 20em,
+						text = color0,
+						font = \LARGE\bfseries,
+						inner sep = 1em
+					] {Ce projet concerne tous les pôles de UBFC : la valorisation des corpus dans le champ de l’enseignement des HN mobilisera les pôles AL, DTMS et LLC ; l’expérience en HN et en web sémantique mobilise le pôle CCM et sur son axe transversal SEISM portant sur la recherche en éducation ; le design de la plateforme et son évaluation, le pôle ERCOS.}
+				(UBFC)
+				edge [color = color1!50, line width = 1em] 
+					node[
+						solid,
+						annotation,
+						right, 
+						concept color = color1,
+						draw = color1!50,
+						fill = color1!5,
+						line width = 0.25em,
+						text width = 20em,
+						text = color0,
+						font = \LARGE\bfseries,
+						inner sep = 1em
+					] {Cette offre de thèse proposée par le laboratoire ELLIADD et l’école doctorale LECLA.}
+				(LECLA)
+		;
+	\end{pgfonlayer}
 \end{scope}
-
-
-
-
-
 
 \begin{scope}
-[
-mindmap,
-text = color0,
-grow cyclic,
-every node/.style =
-{
-	concept,
-	concept color = color4!50,
-	text = color0,
-	execute at begin node = \hskip 0pt
-},
-root concept/.append style =
-{
-	concept color = color4,
-	fill = color4!25,
-	line width = 0.5em,
-	text width = 12em,
-	text = color0,
-	font = \LARGE\scshape
-},
-level 1/.append style =
-{
-	concept color = color4,
-	font = \Large\bfseries,
-	text width = 10em,
-	inner sep = 0pt
-},
-level 2/.append style =
-{
-	concept color = color4!75,
-	font = \large\bfseries,
-	text width = 8em
-}
-]
+	[
+		mindmap,
+		text = color0,
+		grow cyclic,
+		every node/.style =
+		{
+			concept,
+			concept color = color2!50,
+			text = color0,
+			execute at begin node = \hskip 0pt
+		},
+		root concept/.append style =
+		{
+			concept color = color2,
+			draw = color2!75,
+			fill = color2!10,
+			line width = 1em,
+			text width = 20em,
+			text = color0,
+			font = \LARGE\scshape,
+			inner sep = 0pt
+		},
+		level 1/.append style =
+		{
+			concept color = color2,
+			draw = color2!50,
+			fill = color2!5,
+			line width = 0.5em,
+			text width = 18em,
+			text = color0,
+			font = \Large\bfseries,
+			inner sep = 0pt
+		},
+		level 2/.append style =
+		{
+			concept color = color2,
+			draw = color2!50,
+			fill = color2!5,
+			line width = 0.5em,
+			text width = 16em,
+			text = color0,
+			font = \large\bfseries,
+			inner sep = 0pt
+		}
+	]
 
-\node [root concept] (Gestion_des_Donnees)
-at (25em, -25em) {Gestion des Données}
-child [grow = -45, level distance = 20em, concept color = color4!75]
-{
-	node [concept color = color4!75] (Systeme_de_Gestion_des_Metadonnees) {Système de Gestion des Métadonnées}
-	child [grow = -45, level distance = 15em, concept color = color4!50]
-	{
-		node[concept color = color4!50] (Gestion_de_Multiples) {Gestion de Multiples}
-	}
-}
-child [grow = 0, level distance = 20em, concept color = color4!75]
-{
-	node [concept color = color4!75] (Traitement_parallele_des_Donnees_JSON) {Traitement parallèle des Données JSON}
-	child [grow = 0, level distance = 15em, concept color = color4!50]
-	{
-		node[concept color = color4!50] (Regles_de_Reecriture) {Règles de Réécriture}
-	}
-}
-child [grow = -90, level distance = 20em, concept color = color4!75]
-{
-	node [concept color = color4!75] (Requetes_independantes_du_Schema) {Requêtes indépendantes du Schéma}
-	child [grow = -90, level distance = 15em, concept color = color4!50]
-	{
-		node[concept color = color4!50] (Documents_multi-structures) {Documents multi-structurés}
-	}
-}
-;
+	\node [root concept, text width = 20em, inner sep = -0.5em] (HUMANE)
+		at (30em, -30em)
+			{\Huge{Projet \\HUMANE} \\\vspace{0.5em}\Large{\og Humanités Numériques \\pour l'Éducation \fg}}
+		child [grow = 180, level distance = 30em, concept color = color2!50]
+			{
+				node [level 1, text width = 18em] (UFC) {\includegraphics[width = 0.9\textwidth]{./logos/logo UFC.png}}
+			}
+		child [grow = 45, level distance = 30em, concept color = color2!50]
+		{
+			node [level 1, text width = 18em, inner sep = -0.5em] (I-SITE BFC) {\includegraphics[width = 0.65\textwidth]{./logos/logo I-SITE BFC.png}}
+		}
+		child [grow = -90, level distance = 30em, concept color = color2!50]
+		{
+			node [level 1, text width = 18em, inner sep = -1em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
+			child [grow = -45, level distance = 30em, concept color = color2!50]
+			{
+				node [level 2, text width = 16em] (LECLA) {\includegraphics[width = 0.95\textwidth]{./logos/logo LECLA.png}}
+			}
+			child [grow = -90, level distance = 30em, concept color = color2!50]
+			{
+				node [level 2, text width = 16em, inner sep = -1em] (MSH) {\includegraphics[width = 0.85\textwidth]{./logos/logo MSH.png}}
+			}
+			child [grow = -135, level distance = 30em, concept color = color2!50]
+			{
+				node [level 2, text width = 16em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
+			}
+		}
+		;
+	\begin{pgfonlayer}{background}
+	\draw [densely dashed] 
+	(Nom de projet)
+	edge [color = color2!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
+	(I-SITE BFC)
+	edge [color = color2!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Ce projet s'inscrit dans le paradigme de la transmission des pôles thématiques de la fédération des MSH BFC.}
+	(MSH)
+	edge [color = color2!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Ce projet rattaché au laboratoire ELLIADD, 7 chercheurs ELLIADD travaillent déjà au projet HUMANE.}
+	(ELLIADD)
+	edge [color = color2!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Ce projet concerne tous les pôles de UBFC : la valorisation des corpus dans le champ de l’enseignement des HN mobilisera les pôles AL, DTMS et LLC ; l’expérience en HN et en web sémantique mobilise le pôle CCM et sur son axe transversal SEISM portant sur la recherche en éducation ; le design de la plateforme et son évaluation, le pôle ERCOS.}
+	(UBFC)
+	edge [color = color2!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Cette offre de thèse proposée par le laboratoire ELLIADD et l’école doctorale LECLA.}
+	(LECLA)
+	;
+	\end{pgfonlayer}
 \end{scope}
-
-
 
 
 	\begin{scope}
