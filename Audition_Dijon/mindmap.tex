@@ -29,9 +29,6 @@
 
 \usepackage{wallpaper}
 
-\usepackage{transparent}
-
-
 \begin{document}
 	
 %\ThisCenterWallPaper{}{./figures/Social_Network_Analysis_Visualization_transparent.png}
@@ -288,22 +285,6 @@
 			{
 				node [level 1, text width = 18em, inner sep = -2em] (humanistica) {\includegraphics[width = 0.9\textwidth]{./logos/logo humanistica.png}}
 			}
-		child [grow = -90, level distance = 30em, concept color = color2!50]
-		{
-			node [level 1, text width = 18em, inner sep = -1em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
-			child [grow = -45, level distance = 30em, concept color = color2!50]
-			{
-				node [level 2, text width = 16em] (LECLA) {\includegraphics[width = 0.95\textwidth]{./logos/logo LECLA.png}}
-			}
-			child [grow = -90, level distance = 30em, concept color = color2!50]
-			{
-				node [level 2, text width = 16em, inner sep = -1em] (MSH) {\includegraphics[width = 0.85\textwidth]{./logos/logo MSH.png}}
-			}
-			child [grow = -135, level distance = 30em, concept color = color2!50]
-			{
-				node [level 2, text width = 16em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
-			}
-		}
 		;
 	\begin{pgfonlayer}{background}
 	\draw [densely dashed] 
@@ -388,211 +369,125 @@
 \end{scope}
 
 
-	\begin{scope}
-		[
-			mindmap,
+\begin{scope}
+	[
+		mindmap,
+		text = color0,
+		grow cyclic,
+		every node/.style =
+		{
+			concept,
+			concept color = color3!50,
 			text = color0,
-			grow cyclic,
-			every node/.style =
-				{
-					concept,
-					concept color = color2!50,
-					text = color0,
-					execute at begin node = \hskip 0pt
-				},
-			root concept/.append style =
-				{
-					concept color = color2,
-					fill = color2!25,
-					line width = 0.5em,
-					text width = 12em,
-					text = color0,
-					font = \LARGE\scshape
-				},
-			level 1/.append style =
-				{
-					concept color = color2,
-					font = \Large\bfseries,
-					text width = 10em,
-					inner sep = 0pt
-				},
-			level 2/.append style =
-				{
-					concept color = color2!75,
-					font = \large\bfseries,
-					text width = 8em
-				}
-		]
-		\node [root concept] (Transformation_&_Mirgation)
-		at (-125em, -125em)  {\href{run:PPT3.pdf}{Transformation \& Mirgation}}
-		child [grow = 0, level distance = 20em, concept color = color2!75]
-			{
-				node [concept color = color2!75] (Model_Driven_Architecture_MDA) {Model Driven Architecture (MDA)}
-				%child [grow = 0, level distance = 15em]
-				%{
-				%node[concept] (Niveau_Metamodele) {Niveau Métamodèle}										
-				%}
-				child [grow = 40, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (UML_a_NoSQL) {UML à NoSQL}
-					}
-				child [grow = 0, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (UML_a_HBase) {UML à HBase}
-					}
-				child [grow = -40, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (UML_a_GraphDB) {UML à GraphDB}
-					}
-			}
-		child [grow = 90, level distance = 20em, concept color = color2!75]
-			{
-				node [concept color = color2!75] (Mappage_de_Schema) {Mappage de Schéma}
-				child [grow = 90, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (SQL_a_NoSQL) {SQL à NoSQL}
-					}
-				child [grow = 50, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (SQLCMS_a_NoSQL) {SQL(CMS) à NoSQL}
-					}
-				child [grow = 130, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (SQL_a_HBase) {SQL à \\HBase}
-					}
-				child [grow = -30, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (SQL_a_MongDB) {SQL à MongDB}
-					}
-			}
-		child [grow = 135, level distance = 20em, concept color = color2!75]
-			{
-				node [concept color = color2!75] (Cadre_de_Migration) {Cadre de Migration}
-				child [grow = 135, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (MySQL_a_MongoDB) {MySQL à \\MongoDB}
-					}
-			}
-		child [grow = -45, level distance = 20em, concept color = color2!75]
-			{
-				node [concept color = color2!75] (Plates-formes_Middleware) {Plates-formes Middleware}
-				child [grow = -45, level distance = 15em, concept color = color2!50]
-					{
-						node[concept color = color2!50] (Cassandra_&_MongoDB) {Cassandra \& MongoDB}
-					}
-			}
-		;
-	\end{scope}
-
-	% Applied area: theoretical physics and its subfields
-
-	% Applied area: biology and its subfields
-
-
-
-	\begin{scope}
-		[
-			mindmap,
+			execute at begin node = \hskip 0pt
+		},
+		root concept/.append style =
+		{
+			concept color = color3,
+			draw = color3!75,
+			fill = color3!10,
+			line width = 1em,
+			text width = 20em,
 			text = color0,
-			grow cyclic,
-			every node/.style =
-				{
-					concept,
-					concept color = color3!50,
-					text = color0,
-					execute at begin node = \hskip 0pt
-				},
-			root concept/.append style =
-				{
-					concept color = color3,
-					fill = color3!25,
-					line width = 0.5em,
-					text width = 12em,
-					text = color0,
-					font = \LARGE\scshape
-				},
-			level 1/.append style =
-				{
-					concept color = color3,
-					font = \Large\bfseries,
-					text width = 10em,
-					inner sep = 0pt
-				},
-			level 2/.append style =
-				{
-					concept color = color3!75,
-					font = \large\bfseries,
-					text width = 8em
-				}
-		]
-
-		\node [root concept] (Modele_de_Cout)
-		at (125em, 125em) {Modèle de Coût}
-		child [grow = -90, level distance = 20em, concept color = color3!75]
-			{
-				node [concept color = color3!75] (Description_Langage) {Description Langage}
-				child [grow = -90, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (CostDL) {CostDL}
-					}
-			}
-		child [grow = 135, level distance = 20em, concept color = color3!75]
-			{
-				node [concept color = color3!75] (Modele_de_Cout_generique) {Modèle de Coût générique}
-				child [grow = 135, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (Systemes_de_Memoire_hierarchiques) {Systèmes de Mémoire hiérarchiques}
-					}
-				child [grow = 175, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (Diversite_et_Interaction) {Diversité et Interaction}
-					}
-				child [grow = 95, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (Environnement_d_Entreposage) {Environnement d'Entreposage}
-					}
-			}
-		child [grow = -45, level distance = 20em, concept color = color3!75]
-			{
-				node [concept color = color3!75] (Construction_d_un_magasin_de_donnees) {Construction d'un magasin de données}
-				child [grow = -45, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (Magasins_de_Donnees_distribues_et_repliques) {Magasins de Données distribués et répliqués}
-					}
-			}
-		child [grow = 0, level distance = 20em, concept color = color3!75]
-			{
-				node [concept color = color3!75] (Apprentissage_automatique) {Apprentissage automatique}
-				child [grow = 0, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (Temps_et_Ressources_consommes) {Temps et Ressources consommés}
-					}
-			}
-		child [grow = 90, level distance = 20em, concept color = color3!75]
-			{
-				node [concept color = color3!75] (Complexite_structurelle) {Complexité structurelle}
-				child [grow = 90, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (JSON_&_MongoDB) {JSON \& MongoDB}
-					}
-			}
-		child [grow = 45, level distance = 20em, concept color = color3!75]
-			{
-				node [concept color = color3!75] (Expressivite_et_Complexite_des_Requetes) {Expressivité et Complexité des Requêtes}
-				child [grow = 45, level distance = 15em, concept color = color3!50]
-					{
-						node[concept] (MongoDB) {MongoDB}
-					}
-			}
-		;
-	\end{scope}
-
-
-
-
+			font = \LARGE\scshape,
+			inner sep = 0pt
+		},
+		level 1/.append style =
+		{
+			concept color = color3,
+			draw = color3!50,
+			fill = color3!5,
+			line width = 0.5em,
+			text width = 18em,
+			text = color0,
+			font = \Large\bfseries,
+			inner sep = 0pt
+		},
+		level 2/.append style =
+		{
+			concept color = color3,
+			draw = color3!50,
+			fill = color3!5,
+			line width = 0.5em,
+			text width = 16em,
+			text = color0,
+			font = \large\bfseries,
+			inner sep = 0pt
+		}
+	]
 	
-
-
+	\node [root concept, text width = 20em] (Co-tutelle Internationale)
+		at (30em, 30em)
+			{\Huge{Co-tutelle} \\\huge{Internationale}}
+		child [grow = 0, level distance = 30em, concept color = color3!50]
+			{
+				node [level 1, text width = 18em] (Laval University) {\includegraphics[width = 0.95\textwidth]{./logos/logo Laval University.png}}
+				child [grow = 0, level distance = 30em, concept color = color3!50]
+				{
+					node [level 2, text width = 18em, inner sep = 0.25em] (LAVAL FSE) {\includegraphics[width = 0.95\textwidth]{./logos/loge LAVAL FSE.png}}
+				}
+			}
+		child [grow = 45, level distance = 30em, concept color = color3!50]
+			{
+				node [level 1, text width = 18em, inner sep = -2em] (RPI) {\includegraphics[width = 0.95\textwidth]{./logos/logo RPI.png}}
+				child [grow = 0, level distance = 30em, concept color = color3!50]
+				{
+					node [level 2, text width = 18em, fill = color3!75, inner sep = 0.25em] (RPI IDEA) {\includegraphics[width = 0.95\textwidth]{./logos/logo RPI IDEA.png}}
+				}
+			}
+		child [grow = 90, level distance = 30em, concept color = color3!50]
+			{
+				node [level 1, text width = 18em, inner sep = -1em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
+				child [grow = 45, level distance = 30em, concept color = color3!50]
+				{
+					node [level 2, text width = 16em] (LECLA) {\includegraphics[width = 0.95\textwidth]{./logos/logo LECLA.png}}
+				}
+				child [grow = 90, level distance = 30em, concept color = color3!50]
+				{
+					node [level 2, text width = 16em, inner sep = -1em] (MSH) {\includegraphics[width = 0.85\textwidth]{./logos/logo MSH.png}}
+				}
+				child [grow = 135, level distance = 30em, concept color = color3!50]
+				{
+					node [level 2, text width = 16em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
+				}
+			}
+		;
+	\begin{pgfonlayer}{background}
+	\draw [densely dashed] 
+	(Nom de projet)
+	edge [color = color3!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color3,
+	draw = color3!50,
+	fill = color3!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
+	(I-SITE BFC)
+	edge [color = color3!50, line width = 1em] 
+	node[
+	solid,
+	annotation,
+	right, 
+	concept color = color3,
+	draw = color3!50,
+	fill = color3!5,
+	line width = 0.25em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\bfseries,
+	inner sep = 1em
+	] {Ce projet s'inscrit dans le paradigme de la transmission des pôles thématiques de la fédération des MSH BFC.}
+	(MSH)
+	;
+	\end{pgfonlayer}
+\end{scope}
 
 
 \end{tikzpicture}
