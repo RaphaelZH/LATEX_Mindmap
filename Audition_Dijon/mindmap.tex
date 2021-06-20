@@ -136,18 +136,22 @@
 			}
 		child [grow = 45, level distance = 30em, concept color = color1!50]
 			{
-				node [level 1, text width = 18em] (LECLA) {\includegraphics[width = \textwidth]{./logos/logo LECLA.png}}
+				node [level 1, text width = 18em, inner sep = -0.5em] (I-SITE BFC) {\includegraphics[width = 0.65\textwidth]{./logos/logo I-SITE BFC.png}}
 			}
-		child [grow = 90, level distance = 30em, concept color = color1!50]
-			{
-				node [level 1, text width = 18em, inner sep = -0.75em] (I-SITE BFC) {\includegraphics[width = 0.7\textwidth]{./logos/logo I-SITE BFC.png}}
-			}
-		child [grow = 135, level distance = 30em, concept color = color1!50, inner sep = -1em]
+		child [grow = 90, level distance = 30em, concept color = color1!50, inner sep = -1em]
 			{
 				node [level 1, text width = 18em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
-				child [grow = 135, level distance = 30em, concept color = color1!50, inner sep = -1em]
+				child [grow = 45, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em] (ELLIADD) {\includegraphics[width = 0.9\textwidth]{./logos/logo ELLIADD.png}}
+					node [level 2, text width = 16em] (LECLA) {\includegraphics[width = 0.95\textwidth]{./logos/logo LECLA.png}}
+				}
+				child [grow = 90, level distance = 30em, concept color = color1!50, inner sep = 4em]
+				{
+					node [level 2, text width = 16em] (MSH) {\includegraphics[width = \textwidth]{./logos/logo MSH.png}}
+				}
+				child [grow = 135, level distance = 30em, concept color = color1!50, inner sep = -2em]
+				{
+					node [level 2, text width = 16em] (ELLIADD) {\includegraphics[width = 0.6\textwidth]{./logos/logo ELLIADD.png}}
 				}
 			}
 		;
