@@ -134,6 +134,10 @@
 				child [grow = 135, level distance = 30em, concept color = color1!50]
 				{
 					node [level 2, text width = 16em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
+					child [grow = 90, level distance = 30em, concept color = color1!50]
+					{
+						node [level 2, text width = 16em, inner sep = -1.5em] (HULIN) {\includegraphics[width = \textwidth]{./profile/HULIN.png}}
+					}
 				}
 			}
 		;
@@ -434,24 +438,17 @@
 				{
 					node [level 2, text width = 18em, fill = color3!75, inner sep = 0.25em] (RPI IDEA) {\includegraphics[width = 0.95\textwidth]{./logos/logo RPI IDEA.png}}
 				}
-			}
-		child [grow = 90, level distance = 30em, concept color = color3!50]
-			{
-				node [level 1, text width = 18em, inner sep = -1em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
 				child [grow = 45, level distance = 30em, concept color = color3!50]
 				{
-					node [level 2, text width = 16em] (LECLA) {\includegraphics[width = 0.95\textwidth]{./logos/logo LECLA.png}}
+					node [level 2, text width = 16em, inner sep = -1.5em] (McGuinness) {\includegraphics[width = \textwidth]{./profile/McGuinness.png}}
 				}
 				child [grow = 90, level distance = 30em, concept color = color3!50]
 				{
-					node [level 2, text width = 16em, inner sep = -1em] (MSH) {\includegraphics[width = 0.85\textwidth]{./logos/logo MSH.png}}
-				}
-				child [grow = 135, level distance = 30em, concept color = color3!50]
-				{
-					node [level 2, text width = 16em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
+					node [level 2, text width = 16em, inner sep = -1.5em] (McCusker) {\includegraphics[width = \textwidth]{./profile/McCusker.png}}
 				}
 			}
-		;
+		;%Co-directrice Deborah Louise McGuinness 
+		%
 	\begin{pgfonlayer}{background}
 	\draw [densely dashed] 
 	(Nom de projet)
@@ -489,6 +486,74 @@
 	\end{pgfonlayer}
 \end{scope}
 
+\begin{scope}
+[
+mindmap,
+text = color0,
+grow cyclic,
+every node/.style =
+{
+	concept,
+	concept color = color4!50,
+	text = color0,
+	execute at begin node = \hskip 0pt
+},
+root concept/.append style =
+{
+	concept color = color4,
+	draw = color4!75,
+	fill = color4!10,
+	line width = 1em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\scshape,
+	inner sep = 0pt
+},
+level 1/.append style =
+{
+	concept color = color4,
+	draw = color4!50,
+	fill = color4!5,
+	line width = 0.5em,
+	text width = 18em,
+	text = color0,
+	font = \Large\bfseries,
+	inner sep = 0pt
+},
+level 2/.append style =
+{
+	concept color = color4,
+	draw = color4!50,
+	fill = color4!5,
+	line width = 0.5em,
+	text width = 16em,
+	text = color0,
+	font = \large\bfseries,
+	inner sep = 0pt
+}
+]
+
+	\node [level 1, text width = 20em] (1)
+		at (-40em, -20em)
+			{\Huge{Étape 1 \\état de l’art \\1/09/21 \\- \\20/12/21}}
+		child [grow = 0, level distance = 30em, concept color = color4!50]
+			{
+				\node [level 1, text width = 20em] (2) {\Huge{Étape 1 \\état de l’art \\1/09/21 \\- \\20/12/21}}
+				child [grow = 0, level distance = 30em, concept color = color4!50]
+				{
+					node [level 1, text width = 18em, inner sep = -0.5em] (I-SITE BFC) {\includegraphics[width = 0.65\textwidth]{./logos/logo I-SITE BFC.png}}
+					child [grow = 0, level distance = 30em, concept color = color4!50]
+					{
+						node [level 1, text width = 18em, inner sep = -0.5em] (I-SITE BFC) {\includegraphics[width = 0.65\textwidth]{./logos/logo I-SITE BFC.png}}
+						child [grow = 0, level distance = 30em, concept color = color4!50]
+						{
+							node [level 1, text width = 18em, inner sep = -0.5em] (I-SITE BFC) {\includegraphics[width = 0.65\textwidth]{./logos/logo I-SITE BFC.png}}
+						}
+					}
+				}
+			}
+		;
+\end{scope}
 
 \end{tikzpicture}
 
