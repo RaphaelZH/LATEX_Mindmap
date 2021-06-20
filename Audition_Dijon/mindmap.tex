@@ -116,28 +116,41 @@
 			},
 		level 2/.append style =
 			{
-				concept color = color1!75,
+				concept color = color1,
+				draw = color1!50,
+				fill = color1!5,
+				line width = 0.5em,
+				text width = 16em,
+				text = color0,
 				font = \large\bfseries,
-				text width = 8em
+				inner sep = 0pt
 			}
 	]
 
-	\node [root concept, text width = 30em] (logo UBFC)
+	\node [root concept, text width = 20em] (UBFC)
 		at (-30em, 30em)
 			{\includegraphics[width = 0.95\textwidth]{./logos/logo UBFC.png}}
-		child [grow = 0, level distance = 45em, concept color = color1!50]
+		child [grow = 0, level distance = 30em, concept color = color1!50]
 			{
-				node [level 1, text width = 30em] (logo UFC) {\includegraphics[width = 0.9\textwidth]{./logos/logo UFC.png}}
+				node [level 1, text width = 18em] (UFC) {\includegraphics[width = 0.9\textwidth]{./logos/logo UFC.png}}
 			}
-		child [grow = 90, level distance = 45em, concept color = color1!50]
-		{
-			node [level 1, text width = 30em] (logo LECLA) {\includegraphics[width = \textwidth]{./logos/logo LECLA.png}}
-		}
-		child [grow = 180, level distance = 48em, concept color = color1!50]
-		{
-			node [level 1, text width = 30em] (logo I-SITE BFC) {\includegraphics[width = 0.7\textwidth]{./logos/logo I-SITE BFC.png}}
-		}
-	;
+		child [grow = 45, level distance = 30em, concept color = color1!50]
+			{
+				node [level 1, text width = 18em] (LECLA) {\includegraphics[width = \textwidth]{./logos/logo LECLA.png}}
+			}
+		child [grow = 90, level distance = 30em, concept color = color1!50]
+			{
+				node [level 1, text width = 18em, inner sep = -0.75em] (I-SITE BFC) {\includegraphics[width = 0.7\textwidth]{./logos/logo I-SITE BFC.png}}
+			}
+		child [grow = 135, level distance = 30em, concept color = color1!50, inner sep = -1em]
+			{
+				node [level 1, text width = 18em] (LLC) {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
+				child [grow = 135, level distance = 30em, concept color = color1!50, inner sep = -1em]
+				{
+					node [level 2, text width = 16em] (ELLIADD) {\includegraphics[width = 0.9\textwidth]{./logos/logo ELLIADD.png}}
+				}
+			}
+		;
 \end{scope}
 
 
