@@ -28,25 +28,14 @@
 
 \usetikzlibrary{backgrounds}
 
-
-% Information boxes
-\newcommand*{\info}[4][16.3]{%
-  \node [ annotation, #3, scale=0.65, text width = #1em,
-          inner sep = 2mm ] at (#2) {%
-  \list{$\bullet$}{\topsep=0pt\itemsep=0pt\parsep=0pt
-    \parskip=0pt\labelwidth=8pt\leftmargin=8pt
-    \itemindent=0pt\labelsep=2pt}%
-    #4
-  \endlist
-  };
-}
-
 \usepackage{wallpaper}
+
+\usepackage{transparent}
+
 
 \begin{document}
 	
-
-%\ThisCenterWallPaper{}{A}
+%\ThisCenterWallPaper{}{./figures/Social_Network_Analysis_Visualization_transparent.png}
 
 \centering
 
@@ -159,22 +148,51 @@
 			\draw [densely dashed] 
 				(Nom de projet)
 					edge [color = color1!50, line width = 1em] 
-					node[
-						solid,
-						annotation,
-						right, 
-						concept color = color1,
-						draw = color1!50,
-						fill = color1!5,
-						line width = 0.25em,
-						text width = 20em,
-						text = color0,
-						font = \LARGE\bfseries,
-						inner sep = 1em
-					]
-					{Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
-				(I-SITE BFC)
-				;
+						node[
+							solid,
+							annotation,
+							right, 
+							concept color = color1,
+							draw = color1!50,
+							fill = color1!5,
+							line width = 0.25em,
+							text width = 20em,
+							text = color0,
+							font = \LARGE\bfseries,
+							inner sep = 1em
+						] {Ce projet s'inscrit naturellement dans l'axe 1 de l'I-SITE consacré aux systèmes intelligents, ainsi que dans l'axe 3 sur la santé grâce à l'approche comparative des usages.}
+					(I-SITE BFC)
+					edge [color = color1!50, line width = 1em] 
+							node[
+							solid,
+							annotation,
+							right, 
+							concept color = color1,
+							draw = color1!50,
+							fill = color1!5,
+							line width = 0.25em,
+							text width = 20em,
+							text = color0,
+							font = \LARGE\bfseries,
+							inner sep = 1em
+						] {Ce projet s'inscrit dans le paradigme de la transmission des pôles thématiques de la fédération des MSH BFC.}
+					(MSH)
+					edge [color = color1!50, line width = 1em] 
+						node[
+							solid,
+							annotation,
+							right, 
+							concept color = color1,
+							draw = color1!50,
+							fill = color1!5,
+							line width = 0.25em,
+							text width = 20em,
+							text = color0,
+							font = \LARGE\bfseries,
+							inner sep = 1em
+						] {Ce projet rattaché au laboratoire ELLIADD, 7 chercheurs ELLIADD travaillent déjà au projet HUMANE.}
+					(ELLIADD)
+			;
 		\end{pgfonlayer}
 \end{scope}
 
@@ -247,8 +265,6 @@ child [grow = -90, level distance = 20em, concept color = color4!75]
 }
 ;
 \end{scope}
-
-
 
 
 
