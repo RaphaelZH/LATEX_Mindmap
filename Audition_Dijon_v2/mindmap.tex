@@ -110,7 +110,7 @@
 	]
 
 	\node [root concept, text width = 20em] (UBFC)
-		at (-75em, 25em)
+		at (-60em, 20em)
 			{\includegraphics[width = 0.95\textwidth]{./logos/logo UBFC.png}}
 		child [grow = 90, level distance = 30em, concept color = color1!50]
 			{
@@ -134,20 +134,24 @@
 				child [grow = 0, level distance = 30em, concept color = color1!50]
 				{
 					node [level 2, text width = 18em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
-					child [grow = 0, level distance = 30em, concept color = color1!50]
+					child [grow = 45, level distance = 30em, concept color = color1!50]
 					{
 						node [level 2, text width = 18em, inner sep = -1.5em] (HULIN) {\includegraphics[width = \textwidth]{./profile/HULIN.png}}
 					}
 				}
 			};
+	\node[annotation, left,  concept color = color1, draw = color1!50, fill = color1!5, line width = 0.25em, text width = 17.5em, text = color0, font = \Large\bfseries, inner sep = 1em]
+		at (32em, 27em)
+			{\LARGE\bfseries{M. Thibaud HULIN \\\vspace{0.25em} Directeur de thèse}};
 	\begin{pgfonlayer}{background}
 		\draw [densely dashed] 
 			(Nom de projet)
-				edge [color = color1!50, line width = 1em] (I-SITE BFC)
-				edge [color = color1!50, line width = 1em] (MSH)
-				edge [color = color1!50, line width = 1em] (ELLIADD)
-				edge [color = color1!50, line width = 1em] (UBFC)
-				edge [color = color1!50, line width = 1em] (LECLA);
+				edge [color = color1!, line width = 1em] (I-SITE BFC)
+				edge [color = color1!, line width = 1em] (MSH)
+				edge [color = color1!, line width = 1em] (ELLIADD)
+				edge [color = color1!, line width = 1em] (UBFC)
+				edge [color = color1!, line width = 1em] (HULIN)
+				edge [color = color1!, line width = 1em] (LECLA);
 	\end{pgfonlayer}
 \end{scope}
 
@@ -199,9 +203,9 @@
 	]
 
 	\node [root concept, text width = 20em, inner sep = -0.5em] (HUMANE)
-		at (50em, 50em)
+		at (60em, 20em)
 			{\Huge{Projet \\HUMANE} \\\vspace{0.5em}\Large{\og Humanités Numériques \\pour l'Éducation \fg}}
-		child [grow = 135, level distance = 30em, concept color = color2!50]
+		child [grow = 90, level distance = 30em, concept color = color2!50]
 			{
 				node [level 1, text width = 18em, inner sep = -0.5em] (MENJS) {\includegraphics[width = 0.8\textwidth]{./logos/logo MENJS.png}}
 			}
@@ -217,15 +221,12 @@
 			{
 				node [level 1, text width = 18em, inner sep = -2em] (humanistica) {\includegraphics[width = 0.9\textwidth]{./logos/logo humanistica.png}}
 			};
-	\node[annotation, left,  concept color = color2, draw = color2!50, fill = color2!5, line width = 0.25em, text width = 22em, text = color0, font = \Large\bfseries, inner sep = 1em]
-		at (27em, 52em)
-			{\LARGE\bfseries{M. Thibaud HULIN}};
 	\begin{pgfonlayer}{background}
 		\draw [densely dashed] 
 			(HUMANE)
-				edge [color = color2!50, line width = 1em] (Nom de projet)
-				edge [color = color2!50, line width = 1em] (ELLIADD)
-				edge [color = color2!50, line width = 1em] (HULIN);
+				edge [color = color2!, line width = 1em] (Nom de projet)
+				edge [color = color2!, line width = 1em] (ELLIADD)
+				edge [color = color2!, line width = 1em] (HULIN);
 	\end{pgfonlayer}
 \end{scope}
 
@@ -278,34 +279,41 @@
 	]
 	
 	\node [root concept, text width = 20em] (Co-tutelle Internationale)
-		at (0em, -20em)
+		at (10em, -35em)
 			{\Huge{Co-tutelle} \\\huge{Internationale}}
-		child [grow = 0, level distance = 30em, concept color = color3!50]
+		child [grow = 180, level distance = 30em, concept color = color3!50]
 			{
 				node [level 1, text width = 18em] (Laval University) {\includegraphics[width = 0.95\textwidth]{./logos/logo Laval University.png}}
-				child [grow = -45, level distance = 30em, concept color = color3!50]
+				child [grow = 180, level distance = 30em, concept color = color3!50]
 				{
 					node [level 2, text width = 18em, inner sep = 0.25em] (LAVAL FSE) {\includegraphics[width = 0.95\textwidth]{./logos/loge LAVAL FSE.png}}
 				}
 			}
-		child [grow = 180, level distance = 30em, concept color = color3!50]
+		child [grow = 0, level distance = 30em, concept color = color3!50]
 			{
 				node [level 1, text width = 18em, inner sep = -2em] (RPI) {\includegraphics[width = 0.95\textwidth]{./logos/logo RPI.png}}
-				child [grow = 180, level distance = 30em, concept color = color3!50]
+				child [grow =45, level distance = 30em, concept color = color3!50]
 				{
 					node [level 2, text width = 18em, inner sep = -1.5em] (McGuinness) {\includegraphics[width = \textwidth]{./profile/McGuinness.png}}
 				}
-				child [grow = -135, level distance = 30em, concept color = color3!50]
+				child [grow = 0, level distance = 30em, concept color = color3!50]
 				{
 					node [level 2, text width = 18em, inner sep = -1.5em] (McCusker) {\includegraphics[width = \textwidth]{./profile/McCusker.png}}
 				}
 			};
-	\node[annotation, left,  concept color = color3, draw = color3!50, fill = color3!5, line width = 0.25em, text width = 45em, text = color0, font = \Large\bfseries, inner sep = 1em]
-		at (0em, -15em)
-			{\LARGE\bfseries{M. Jamie McCusker, la co-tutelle de projet}};
-	\node[annotation, left,  concept color = color3, draw = color3!50, fill = color3!5, line width = 0.25em, text width = 16em, text = color0, font = \Large\bfseries, inner sep = 1em]
-		at (-50em, -22em)
-			{\LARGE\bfseries{Mme Deborah L. McGuinness, la co-directrice}};
+	\node[annotation, left,  concept color = color3, draw = color3!50, fill = color3!5, line width = 0.25em, text width = 18em, text = color0, font = \Large\bfseries, inner sep = 1em]
+		at (100em, -26.5em)
+			{\LARGE\bfseries{M. Jamie McCusker \\\vspace{0.25em} Co-tutelle de projet}};
+	\node[annotation, left,  concept color = color3, draw = color3!50, fill = color3!5, line width = 0.25em, text width = 26em, text = color0, font = \Large\bfseries, inner sep = 1em]
+		at (100em, -20em)
+			{\LARGE\bfseries{Mme Deborah L. McGuinness \\\vspace{0.25em} Co-directrice}};
+	\begin{pgfonlayer}{background}
+	\draw [densely dashed] 
+		(Nom de projet)
+			edge [color = color3!, line width = 1em] (Co-tutelle Internationale)
+			edge [color = color3!, line width = 1em] (McGuinness)
+			edge [color = color3!, line width = 1em] (McCusker);
+	\end{pgfonlayer}
 \end{scope}
 
 \begin{scope}
@@ -377,13 +385,12 @@
 	\begin{pgfonlayer}{background}
 		\draw [densely dashed] 
 			(E2)
-			edge [color = color4!50, line width = 1em] (HUMANE)
-			edge [color = color4!50, line width = 1em] (LAVAL FSE)
+			edge [color = color4!, line width = 1em] (HUMANE)
+			edge [color = color4!, line width = 1em] (LAVAL FSE)
 			(E3)
-			edge [color = color4!50, line width = 1em] (RPI)
+			edge [color = color4!, line width = 1em] (RPI)
 			(E4)
-			edge [color = color4!50, line width = 1em] (RPI)
-			;
+			edge [color = color4!, line width = 1em] (RPI);
 	\end{pgfonlayer}
 \end{scope}
 
