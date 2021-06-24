@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  24 JUN 2021 22:19
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  25 JUN 2021 01:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1385,16 +1385,16 @@ Overfull \hbox (70.33012pt too wide) in paragraph at lines 105--105
  [][]  
  []
 
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
  []
 
 (./PPT.toc)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1414,12 +1414,9 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Missing character: There is no ^^9a in font [lmroman10-regular]:mapping=tex-tex
-t;!
-)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+))
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1431,8 +1428,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1441,8 +1438,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 [4
 
 ] (./PPT.toc)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1453,8 +1450,12 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 ]
 File: ./images/Humanites_Numeriques.JPG Graphic file (type bmp)
 <./images/Humanites_Numeriques.JPG>
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+
+Overfull \vbox (0.61284pt too high) detected at line 167
+ []
+
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1463,8 +1464,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 [6
 
 ] (./PPT.toc)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1479,11 +1480,11 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 File: images/mindmap.png Graphic file (type bmp)
 <images/mindmap.png>
 )
-Overfull \vbox (1.12634pt too high) detected at line 176
+Overfull \vbox (1.12634pt too high) detected at line 181
  []
 
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1495,8 +1496,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1508,8 +1509,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1520,8 +1521,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 ]
 File: ./images/Semantic_Web.png Graphic file (type bmp)
 <./images/Semantic_Web.png>
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1533,8 +1534,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1557,8 +1558,8 @@ t;!
 Missing character: There is no ^^9a in font [lmroman10-regular]:mapping=tex-tex
 t;!
 )
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1573,8 +1574,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 File: images/Ontologie_1.png Graphic file (type bmp)
 <images/Ontologie_1.png>
 )
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1589,8 +1590,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 File: images/Ontologie_2.png Graphic file (type bmp)
 <images/Ontologie_2.png>
 )
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1599,8 +1600,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 [15
 
 ] (./PPT.toc)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1612,8 +1613,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
-File: images/logo ELLIADD.png Graphic file (type bmp)
-<images/logo ELLIADD.png>
+File: images/logo.png Graphic file (type bmp)
+<images/logo.png>
 
 Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [][]  
@@ -1634,18 +1635,18 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [18
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (./PPT.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `PPT.out' has not changed.
-(rerunfilecheck)             Checksum: 39F94FD2385977F3E92D49DA1C9D807F;965.
+(rerunfilecheck)             Checksum: 6CBB240B81122FAA68633650DB3996E2;965.
  ) 
 Here is how much of TeX's memory you used:
- 29381 strings out of 479699
- 562693 string characters out of 5889003
- 901351 words of memory out of 5000000
+ 29380 strings out of 479699
+ 562641 string characters out of 5889003
+ 901319 words of memory out of 5000000
  45939 multiletter control sequences out of 15000+600000
  540200 words of font info for 61 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
