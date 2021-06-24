@@ -203,7 +203,7 @@ at (-30em, 50em)
 		node [level 2, text width = 18em, inner sep = -0.75em] (ELLIADD) {\includegraphics[width = 0.8\textwidth]{./logos/logo ELLIADD.png}}
 		child [grow = 0, level distance = 30em, concept color = color2!50]
 		{
-			node [level 2, text width = 18em, inner sep = -1.5em] (HULIN) {\includegraphics[width = \textwidth]{./profile/HULIN.png}}
+			node [level 2, text width = 18em, inner sep = -1.5em] (HULIN) {\includegraphics[width = \textwidth]{./profiles/HULIN.png}}
 		}
 	};
 \node[annotation, left,  concept color = color2, draw = color2!50, fill = color2!5, line width = 0.25em, text width = 17.5em, text = color0, font = \Large\bfseries, inner sep = 1em]
@@ -283,6 +283,10 @@ child [grow = 0, level distance = 30em, concept color = color3!50]
 {
 	node [level 1, text width = 18em] (canope) {\includegraphics[width = 0.9\textwidth]{./logos/logo canope.png}}
 }
+child [grow = -45, level distance = 30em, concept color = color3!50]
+{
+	node [level 1, text width = 18em] (DRNE) {\includegraphics[width = 0.9\textwidth]{./logos/logo DRNE.png}}
+}
 child [grow = 45, level distance = 30em, concept color = color3!50]
 {
 	node [level 1, text width = 18em, inner sep = -2em] (humanistica) {\includegraphics[width = 0.9\textwidth]{./logos/logo humanistica.png}}
@@ -296,167 +300,98 @@ edge [color = color3!, line width = 1em] (Nom de projet);
 
 
 \begin{scope}
-	[
-		mindmap,
-		text = color0,
-		grow cyclic,
-		every node/.style =
+[
+mindmap,
+text = color0,
+grow cyclic,
+every node/.style =
+{
+	concept,
+	concept color = color4!50,
+	text = color0,
+	execute at begin node = \hskip 0pt
+},
+root concept/.append style =
+{
+	concept color = color4,
+	draw = color4!75,
+	fill = color4!10,
+	line width = 1em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\scshape,
+	inner sep = 0pt
+},
+level 1/.append style =
+{
+	concept color = color4,
+	draw = color4!50,
+	fill = color4!5,
+	line width = 0.5em,
+	text width = 18em,
+	text = color0,
+	font = \Large\bfseries,
+	inner sep = 0pt
+},
+level 2/.append style =
+{
+	concept color = color4,
+	draw = color4!50,
+	fill = color4!5,
+	line width = 0.5em,
+	text width = 16em,
+	text = color0,
+	font = \large\bfseries,
+	inner sep = 0pt
+}
+]
+
+\node [root concept, text width = 20em] (Co-tutelle Internationale)
+at (10em, -35em)
+{\Huge{Co-tutelle} \\\huge{Internationale}}
+child [grow = 180, level distance = 30em, concept color = color4!50]
+{
+	node [level 1, text width = 18em] (Laval University) {\includegraphics[width = 0.95\textwidth]{./logos/logo Laval University.png}}
+	child [grow = 180, level distance = 30em, concept color = color4!50]
+	{
+		node [level 2, text width = 18em, inner sep = 0.25em] (LAVAL FSE) {\includegraphics[width = 0.95\textwidth]{./logos/loge LAVAL FSE.png}}
+	}
+}
+child [grow = 0, level distance = 30em, concept color = color4!50]
+{
+	node [level 1, text width = 18em, inner sep = -2em] (RPI) {\includegraphics[width = 0.95\textwidth]{./logos/logo RPI.png}}
+	child [grow =45, level distance = 30em, concept color = color4!50]
+	{
+		node [level 2, text width = 18em, inner sep = -1.5em] (McGuinness) {\includegraphics[width = \textwidth]{./profiles/McGuinness.png}}
+		child [grow = 0, level distance = 30em, concept color = color4!50]
 		{
-			concept,
-			concept color = color3!50,
-			text = color0,
-			execute at begin node = \hskip 0pt
-		},
-		root concept/.append style =
-		{
-			concept color = color3,
-			draw = color3!75,
-			fill = color3!10,
-			line width = 1em,
-			text width = 20em,
-			text = color0,
-			font = \LARGE\scshape,
-			inner sep = 0pt
-		},
-		level 1/.append style =
-		{
-			concept color = color3,
-			draw = color3!50,
-			fill = color3!5,
-			line width = 0.5em,
-			text width = 18em,
-			text = color0,
-			font = \Large\bfseries,
-			inner sep = 0pt
-		},
-		level 2/.append style =
-		{
-			concept color = color3,
-			draw = color3!50,
-			fill = color3!5,
-			line width = 0.5em,
-			text width = 16em,
-			text = color0,
-			font = \large\bfseries,
-			inner sep = 0pt
+			node [level 2, text width = 18em, inner sep = -1.5em] (W3C) {\includegraphics[width = \textwidth]{./logos/logo W3C.png}}
 		}
-	]
-	
-	\node [root concept, text width = 20em] (Co-tutelle Internationale)
-		at (10em, -35em)
-			{\Huge{Co-tutelle} \\\huge{Internationale}}
-		child [grow = 180, level distance = 30em, concept color = color3!50]
-			{
-				node [level 1, text width = 18em] (Laval University) {\includegraphics[width = 0.95\textwidth]{./logos/logo Laval University.png}}
-				child [grow = 180, level distance = 30em, concept color = color3!50]
-				{
-					node [level 2, text width = 18em, inner sep = 0.25em] (LAVAL FSE) {\includegraphics[width = 0.95\textwidth]{./logos/loge LAVAL FSE.png}}
-				}
-			}
-		child [grow = 0, level distance = 30em, concept color = color3!50]
-			{
-				node [level 1, text width = 18em, inner sep = -2em] (RPI) {\includegraphics[width = 0.95\textwidth]{./logos/logo RPI.png}}
-				child [grow =45, level distance = 30em, concept color = color3!50]
-				{
-					node [level 2, text width = 18em, inner sep = -1.5em] (McGuinness) {\includegraphics[width = \textwidth]{./profile/McGuinness.png}}
-				}
-				child [grow = 0, level distance = 30em, concept color = color3!50]
-				{
-					node [level 2, text width = 18em, inner sep = -1.5em] (McCusker) {\includegraphics[width = \textwidth]{./profile/McCusker.png}}
-				}
-			};
-	\node[annotation, left,  concept color = color3, draw = color3!50, fill = color3!5, line width = 0.25em, text width = 18em, text = color0, font = \Large\bfseries, inner sep = 1em]
-		at (100em, -26.5em)
-			{\LARGE\bfseries{M. Jamie McCusker \\\vspace{0.25em} Co-tutelle de projet}};
-	\node[annotation, left,  concept color = color3, draw = color3!50, fill = color3!5, line width = 0.25em, text width = 26em, text = color0, font = \Large\bfseries, inner sep = 1em]
-		at (100em, -20em)
-			{\LARGE\bfseries{Mme Deborah L. McGuinness \\\vspace{0.25em} Co-directrice}};
-	\begin{pgfonlayer}{background}
-	\draw [densely dashed] 
-		(Nom de projet)
-			edge [color = color3!, line width = 1em] (Co-tutelle Internationale)
-			edge [color = color3!, line width = 1em] (McGuinness)
-			edge [color = color3!, line width = 1em] (McCusker);
-	\end{pgfonlayer}
+	}
+	child [grow = 0, level distance = 30em, concept color = color4!50]
+	{
+		node [level 2, text width = 18em, inner sep = -1.5em] (McCusker) {\includegraphics[width = \textwidth]{./profiles/McCusker.png}}
+		child [grow = 0, level distance = 30em, concept color = color4!50]
+		{
+			node [level 2, text width = 18em, inner sep = -1.5em] (Whyis) {\includegraphics[width = \textwidth]{./logos/logo Whyis.png}}
+		}
+	}
+};
+\node[annotation, left,  concept color = color4, draw = color4!50, fill = color4!5, line width = 0.25em, text width = 18em, text = color0, font = \Large\bfseries, inner sep = 1em]
+at (100em, -26.5em)
+{\LARGE\bfseries{M. Jamie McCusker \\\vspace{0.25em} Co-tutelle de projet}};
+\node[annotation, left,  concept color = color4, draw = color4!50, fill = color4!5, line width = 0.25em, text width = 26em, text = color0, font = \Large\bfseries, inner sep = 1em]
+at (100em, -20em)
+{\LARGE\bfseries{Mme Deborah L. McGuinness \\\vspace{0.25em} Co-directrice}};
+\begin{pgfonlayer}{background}
+\draw [densely dashed] 
+(Nom de projet)
+edge [color = color4!, line width = 1em] (Co-tutelle Internationale)
+edge [color = color4!, line width = 1em] (McGuinness)
+edge [color = color4!, line width = 1em] (McCusker);
+\end{pgfonlayer}
 \end{scope}
 
-\begin{scope}
-	[
-		mindmap,
-		text = color0,
-		grow cyclic,
-		every node/.style =
-		{
-			concept,
-			concept color = color4!50,
-			text = color0,
-			execute at begin node = \hskip 0pt
-		},
-		root concept/.append style =
-		{
-			concept color = color4,
-			draw = color4!75,
-			fill = color4!10,
-			line width = 1em,
-			text width = 20em,
-			text = color0,
-			font = \LARGE\scshape,
-			inner sep = 0pt
-		},
-		level 1/.append style =
-		{
-			concept color = color4,
-			draw = color4!50,
-			fill = color4!95,
-			line width = 0.5em,
-			text width = 16em,
-			text = color4!5,
-			font = \Large\bfseries,
-			inner sep = 0pt
-		},
-		level 2/.append style =
-		{
-			concept color = color4,
-			draw = color4!50,
-			fill = color4!5,
-			line width = 0.5em,
-			text width = 16em,
-			text = color0,
-			font = \large\bfseries,
-			inner sep = 0pt
-		}
-	]
-
-	\node [level 1, text width = 18em, inner sep = -2em] (E3)
-		at (0em, -45em)
-			{\Huge{Étape 3}}
-		child [grow = 180, level distance = 20em, concept color = color4!50]
-			{
-				node [level 1, text width = 18em, inner sep = -2em] (E2) {\Huge{Étape 2}}
-				child [grow = 180, level distance = 20em, concept color = color4!50]
-				{
-					node [level 1, text width = 18em, inner sep = -2em] (E1) {\Huge{Étape 1}}
-				}
-			}
-		child [grow = 0, level distance = 20em, concept color = color4!50]
-			{
-				node [level 1, text width = 18em, inner sep = -2.5em] (E4) {\Huge{Étape 4}}
-				child [grow = 0, level distance = 20em, concept color = color4!50]
-				{
-					node [level 1, text width = 18em, inner sep = -2em] (E5) {\Huge{Étape 5}}
-				}
-			};
-	\begin{pgfonlayer}{background}
-		\draw [densely dashed] 
-			(E2)
-			edge [color = color4!, line width = 1em] (HUMANE)
-			edge [color = color4!, line width = 1em] (LAVAL FSE)
-			(E3)
-			edge [color = color4!, line width = 1em] (RPI)
-			(E4)
-			edge [color = color4!, line width = 1em] (RPI);
-	\end{pgfonlayer}
-\end{scope}
 
 \end{tikzpicture}
 
