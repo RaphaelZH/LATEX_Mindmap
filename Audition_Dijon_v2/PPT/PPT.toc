@@ -2,8 +2,9 @@
 \beamer@sectionintoc {1}{À propos de moi}{2}{0}{1}
 \beamer@sectionintoc {2}{Humanités Numériques (HN)}{5}{0}{2}
 \beamer@sectionintoc {3}{À propos du projet}{7}{0}{3}
-\beamer@subsectionintoc {3}{1}{Synthèse de projet}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Environnement et partenaires}{8}{0}{3}
 \beamer@subsectionintoc {3}{2}{Objectifs de la recherche en IA }{9}{0}{3}
 \beamer@subsectionintoc {3}{3}{Démarche globale}{10}{0}{3}
+\beamer@subsectionintoc {3}{4}{Utiliser les technologies du web sémantique pour construire des services intelligents}{12}{0}{3}
 \beamer@sectionintoc {4}{Conclusion}{16}{0}{4}
 \beamer@subsectionintoc {4}{1}{Conclusion}{17}{0}{4}

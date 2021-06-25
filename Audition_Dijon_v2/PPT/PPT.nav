@@ -22,8 +22,8 @@
 \headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{Synthèse de projet}}
-\headcommand {\slideentry {3}{1}{1}{8/8}{Synthèse de projet}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{Environnement et partenaires}}
+\headcommand {\slideentry {3}{1}{1}{8/8}{Environnement et partenaires}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
 \headcommand {\beamer@subsectionentry {0}{3}{2}{9}{Objectifs de la recherche en IA }}
@@ -35,16 +35,18 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {3}{3}{2}{11/11}{Démarche globale}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{3}{3}{12/12}{Démarche globale}{0}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{12}{Utiliser les technologies du web sémantique pour construire des services intelligents}}
+\headcommand {\slideentry {3}{4}{1}{12/12}{Utiliser les technologies du web sémantique pour construire des services intelligents}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{3}{4}{13/13}{Démarche globale}{0}}
+\headcommand {\slideentry {3}{4}{2}{13/13}{Utiliser les technologies du web sémantique pour construire des services intelligents}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{3}{5}{14/14}{Démarche globale}{0}}
+\headcommand {\slideentry {3}{4}{3}{14/14}{Utiliser les technologies du web sémantique pour construire des services intelligents}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{3}{6}{15/15}{Démarche globale}{0}}
+\headcommand {\slideentry {3}{4}{4}{15/15}{Utiliser les technologies du web sémantique pour construire des services intelligents}{0}}
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\beamer@sectionpages {7}{15}}
-\headcommand {\beamer@subsectionpages {10}{15}}
+\headcommand {\beamer@subsectionpages {12}{15}}
 \headcommand {\sectionentry {4}{Conclusion}{16}{Conclusion}{0}}
 \headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
