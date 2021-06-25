@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  25 JUN 2021 04:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  25 JUN 2021 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1406,16 +1406,16 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-Overfull \vbox (3.11493pt too high) detected at line 129
+Overfull \vbox (31.69562pt too high) detected at line 131
  []
 
 File: images/logo.png Graphic file (type bmp)
@@ -1431,6 +1431,9 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
+Overfull \vbox (3.84059pt too high) detected at line 146
+ []
+
 File: images/logo.png Graphic file (type bmp)
 <images/logo.png>
 
@@ -1453,10 +1456,6 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 ]
 File: ./images/Humanites_Numeriques.JPG Graphic file (type bmp)
 <./images/Humanites_Numeriques.JPG>
-
-Overfull \vbox (6.9162pt too high) detected at line 167
- []
-
 File: images/logo.png Graphic file (type bmp)
 <images/logo.png>
 
@@ -1502,7 +1501,7 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
-Overfull \vbox (52.64677pt too high) detected at line 207
+Overfull \vbox (47.44542pt too high) detected at line 213
  []
 
 File: images/logo.png Graphic file (type bmp)
@@ -1553,7 +1552,7 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 File: ./images/Semantic_Web.png Graphic file (type bmp)
 <./images/Semantic_Web.png>
 
-Overfull \vbox (20.24243pt too high) detected at line 256
+Overfull \vbox (73.54848pt too high) detected at line 265
  []
 
 File: images/logo.png Graphic file (type bmp)
@@ -1588,8 +1587,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb
-File: images/Ontologie_1.png Graphic file (type bmp)
-<images/Ontologie_1.png>
+File: images/Ontologie_2.png Graphic file (type bmp)
+<images/Ontologie_2.png>
 )
 File: images/logo.png Graphic file (type bmp)
 <images/logo.png>
@@ -1607,8 +1606,8 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb
-File: images/Ontologie_2.png Graphic file (type bmp)
-<images/Ontologie_2.png>
+File: images/Ontologie_1.png Graphic file (type bmp)
+<images/Ontologie_1.png>
 )
 File: images/logo.png Graphic file (type bmp)
 <images/logo.png>
@@ -1636,6 +1635,9 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb)
+Overfull \vbox (63.90065pt too high) detected at line 318
+ []
+
 File: images/logo.png Graphic file (type bmp)
 <images/logo.png>
 
@@ -1662,8 +1664,7 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
 \openout4 = `PPT.vrb'.
 
  (./PPT.vrb
-File: images/merci.png Graphic file (type bmp)
-<images/merci.png>
+Missing character: There is no   in font [lmroman6-regular]:mapping=tex-text;!
 )
 File: images/logo.png Graphic file (type bmp)
 <images/logo.png>
@@ -1687,21 +1688,21 @@ Overfull \hbox (72.83212pt too wide) has occurred while \output is active
  [20
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
  (./PPT.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 348.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
 Package rerunfilecheck Info: File `PPT.out' has not changed.
-(rerunfilecheck)             Checksum: D924F2C1E42BCA92A61B25EB8FEC0408;1192.
+(rerunfilecheck)             Checksum: 7C124BB8C6CA8478C321B6282A74F2E2;1192.
  ) 
 Here is how much of TeX's memory you used:
- 29418 strings out of 479699
- 563244 string characters out of 5889003
- 902871 words of memory out of 5000000
- 45963 multiletter control sequences out of 15000+600000
- 541947 words of font info for 75 fonts, out of 8000000 for 9000
+ 29415 strings out of 479699
+ 563225 string characters out of 5889003
+ 902907 words of memory out of 5000000
+ 45959 multiletter control sequences out of 15000+600000
+ 541955 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,19n,74p,1040b,917s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,19n,74p,1040b,957s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on PPT.pdf (19 pages).
