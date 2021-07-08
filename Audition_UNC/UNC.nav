@@ -1,0 +1,67 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{Introduction}{2}{Introduction}{0}}
+\headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@subsectionpages {2}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Contexte de recherche}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Contexte de recherche}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{4}{Le défi}}
+\headcommand {\slideentry {1}{2}{1}{4/4}{Le défi}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{2}{2}{5/5}{Le défi}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@sectionpages {2}{5}}
+\headcommand {\beamer@subsectionpages {4}{5}}
+\headcommand {\sectionentry {2}{LA MÉTHODE $code2aes2vec$}{6}{LA MÉTHODE $code2aes2vec$}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Deux étapes}}
+\headcommand {\slideentry {2}{1}{1}{7/7}{Deux étapes}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{1}{2}{8/8}{Deux étapes}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{$code2aes$ : construction de séquences d'exécution abstraites (AES)}}
+\headcommand {\slideentry {2}{2}{1}{9/9}{$code2aes$ : construction de séquences d'exécution abstraites (AES)}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{2}{2}{10/10}{$code2aes$ : construction de séquences d'exécution abstraites (AES)}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{11}{$aes2vec$ : apprentissage des intégrations de programmes d'AES}}
+\headcommand {\slideentry {2}{3}{1}{11/11}{$aes2vec$ : apprentissage des intégrations de programmes d'AES}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{3}{2}{12/12}{$aes2vec$ : apprentissage des intégrations de programmes d'AES}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {6}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\sectionentry {3}{Évaluation de la démarche}{13}{Évaluation de la démarche}{0}}
+\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Évaluation de manière qualitative}}
+\headcommand {\slideentry {3}{1}{1}{14/14}{Évaluation de manière qualitative}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{15}{Évaluation de manière quantitative}}
+\headcommand {\slideentry {3}{2}{1}{15/15}{Évaluation de manière quantitative}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{16}{Application à la propagation du feed-back}}
+\headcommand {\slideentry {3}{3}{1}{16/16}{Application à la propagation du feed-back}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\beamer@sectionpages {17}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\gdef \inserttotalframenumber {17}}
+\headcommand {\beamer@sectionpages {13}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\sectionentry {4}{Perspectives d'avenir}{17}{Perspectives d'avenir}{0}}
+\headcommand {\slideentry {4}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
