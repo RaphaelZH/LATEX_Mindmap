@@ -31,7 +31,7 @@
 
 \begin{document}
 	
-\ThisCenterWallPaper{}{./figures/Social_Network_Analysis_Visualization_transparent.png}
+%\ThisCenterWallPaper{}{./figures/Social_Network_Analysis_Visualization_transparent.png}
 
 \centering
 
@@ -301,102 +301,8 @@ child [grow = -90, level distance = 30em, concept color = color3!50]
 \end{scope}
 
 
-\begin{scope}
-[
-mindmap,
-text = color0,
-grow cyclic,
-every node/.style =
-{
-	concept,
-	concept color = color4!50,
-	text = color0,
-	execute at begin node = \hskip 0pt
-},
-root concept/.append style =
-{
-	concept color = color4,
-	draw = color4!75,
-	fill = color4!10,
-	line width = 1em,
-	text width = 20em,
-	text = color0,
-	font = \LARGE\scshape,
-	inner sep = 0pt
-},
-level 1/.append style =
-{
-	concept color = color4,
-	draw = color4!50,
-	fill = color4!5,
-	line width = 0.5em,
-	text width = 18em,
-	text = color0,
-	font = \Large\bfseries,
-	inner sep = 0pt
-},
-level 2/.append style =
-{
-	concept color = color4,
-	draw = color4!50,
-	fill = color4!5,
-	line width = 0.5em,
-	text width = 16em,
-	text = color0,
-	font = \large\bfseries,
-	inner sep = 0pt
-}
-]
 
-\node [root concept, text width = 20em, inner sep = -1em] (Co-tutelle Partenariat Internationale)
-at (0em, -40em)
-{\Huge{Co-tutelle} \\\huge{\& Partenariat} \\\LARGE{Internationale}}
-child [grow = 0, level distance = 30em, concept color = color4!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (Laval University) {\includegraphics[width = 0.6\textwidth]{./logos/logo Laval University.png}}
-	child [grow = 0, level distance = 30em, concept color = color4!50]
-	{
-		node [level 2, text width = 16em, inner sep = -1em] (LAVAL FSE) {\includegraphics[width = 0.6\textwidth]{./logos/loge LAVAL FSE.png}}
-	}
-}
-child [grow = 180, level distance = 30em, concept color = color4!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (RPI) {\includegraphics[width = 0.6\textwidth]{./logos/logo RPI.png}}
-	child [grow =45, level distance = 30em, concept color = color4!50]
-	{
-		node [level 2, text width = 16em, inner sep = -1em] (McGuinness) {\includegraphics[width = 0.9\textwidth]{./profiles/McGuinness.png}}
-		child [grow = 0, level distance = 25em, concept color = color4!50]
-		{
-			node [level 2, text width = 14em, inner sep = -1em] (W3C) {\includegraphics[width = 0.6\textwidth]{./logos/logo W3C.png}}
-		}
-	}
-	child [grow = 135, level distance = 30em, concept color = color4!50]
-	{
-		node [level 2, text width = 16em, inner sep = -1em] (McCusker) {\includegraphics[width = 0.9\textwidth]{./profiles/McCusker.png}}
-		child [grow = 0, level distance = 25em, concept color = color4!50]
-		{
-			node [level 2, text width = 14em, inner sep = -1em] (Whyis) {\includegraphics[width = 0.6\textwidth]{./logos/logo Whyis.png}}
-		}
-	}
-};
-\node[annotation, left,  concept color = color4, draw = color4!50, fill = color4!5, line width = 0.25em, text width = 19em, text = color0, font = \Large\bfseries, inner sep = 1em]
-at (-43em, -33em)
-{\LARGE\bfseries{M. Jamie McCusker \\\vspace{0.25em} Directeur des données\\\vspace{0.25em} Collaborateur}};
-\node[annotation, left,  concept color = color4, draw = color4!50, fill = color4!5, line width = 0.25em, text width = 40em, text = color0, font = \Large\bfseries, inner sep = 1em]
-at (39.25em, -28.25em)
-{\LARGE\bfseries{Mme Deborah L. McGuinness Co-directrice}};
-\begin{pgfonlayer}{background}
-\draw [densely dashed] 
-(Nom de projet)
-	edge [color = color4!, line width = 1em] (LAVAL FSE)
-	edge [color = color4!, line width = 1em] (RPI)
-	edge [color = color4!, line width = 1em] (McGuinness)
-	edge [color = color4!, line width = 1em] (McCusker)
-(HUMANE)
-	edge [color = color4!, line width = 1em] (Laval University)
-	edge [color = color4!, line width = 1em] (RPI);
-\end{pgfonlayer}
-\end{scope}
+
 
 
 \end{tikzpicture}
