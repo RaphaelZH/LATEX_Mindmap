@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  13 JUL 2021 23:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  15 JUL 2021 23:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -708,8 +708,6 @@ LaTeX Info: Redefining \nameref on input line 32.
 \@outlinefile=\write4
 \openout4 = `mindmap.out'.
 
-File: ./logos/logo UBFC.png Graphic file (type bmp)
-<./logos/logo UBFC.png>
 File: ./logos/logo UFC.png Graphic file (type bmp)
 <./logos/logo UFC.png>
 File: ./logos/logo I-SITE BFC.png Graphic file (type bmp)
@@ -753,10 +751,10 @@ Package rerunfilecheck Info: File `mindmap.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21743 strings out of 479699
- 405919 string characters out of 5889003
- 716009 words of memory out of 5000000
- 38591 multiletter control sequences out of 15000+600000
+ 21737 strings out of 479699
+ 405789 string characters out of 5889003
+ 715873 words of memory out of 5000000
+ 38586 multiletter control sequences out of 15000+600000
  570648 words of font info for 43 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,10n,79p,421b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
