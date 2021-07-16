@@ -159,34 +159,51 @@
 		child [grow = -150, level distance = 30em, concept color = color1!50]
 		{
 			node [level 1, text width = 18em, inner sep = -1em] (Définition de l'apprentissage fédéré) {\huge\textsc{Définition de \\l'apprentissage \\fédéré}}
-			child [grow = 150, level distance = 30em, concept color = color1!50]
+			child [grow = 150, level distance = 30em, concept color = color1!50, densely dashed]
 			{
 				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1) {\huge{la méthode conventionnelle}}
-				child [grow = 160, level distance = 30em, concept color = color1!50]
+				child [grow = 165, level distance = 40em, concept color = color1!50]
 				{
-					node [level 3, text width = 20em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1 - 1) {\huge{rassembler \\toutes les données}}
+					node [level 3, text width = 20em, inner sep = 2em] (Définition de l'apprentissage fédéré - 1 - 1) {\huge{rassembler \\toutes les données}}
 				}
-				child [grow = -160, level distance = 30em, concept color = color1!50]
+				child [grow = 180, level distance = 40em, concept color = color1!50]
 				{
-					node [level 3, text width = 24em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1 - 2) {\huge{utiliser $D = {D}_{1}\cup...\cup{D}_{N}$ \\pour former un modèle ${M}_{SUM}$}}
+					node [level 3, text width = 30em, inner sep = 2em] (Définition de l'apprentissage fédéré - 1 - 2) {\huge{utiliser $D = {D}_{1}\cup...\cup{D}_{N}$ \\pour former un modèle ${M}_{SUM}$}}
 				}
 			}
-			child [grow = 195, level distance = 30em, concept color = color1!50]
+			child [grow = 190, level distance = 30em, concept color = color1!50]
 			{
 				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 2) {\huge{un processus d'apprentissage}}
+				child [grow = 165, level distance = 40em, concept color = color1!50]
+				{
+					node [level 3, text width = 28em, inner sep = 2em] (Définition de l'apprentissage fédéré - 2 - 1) {\huge{les propriétaires de données \\forment en collaboration \\un modèle ${M}_{FED}$}}
+				}
+				child [grow = 180, level distance = 40em, concept color = color1!50]
+				{
+					node [level 3, text width = 34em, inner sep = 2em] (Définition de l'apprentissage fédéré - 2 - 2) {\huge{aucun propriétaire de données ${F}_{i}$ \\n'expose ses données ${D}_{i}$ à d’autres}}
+				}
 			}
-			child [grow = 240, level distance = 30em, concept color = color1!50]
+			child [grow = 230, level distance = 30em, concept color = color1!50]
 			{
 				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 3) {\LARGE{$\left| {V}_{FED} - {V}_{SUM}\right| < \delta$}}
+				child [grow = 180, level distance = 40em, concept color = color1!50]
+				{
+					node [level 3, text width = 24em, inner sep = 2em] (Définition de l'apprentissage fédéré - 3 - 1) {\huge{${V}_{FED}$, \\la précision de ${M}_{FED}$}}
+				}
+				child [grow = 205, level distance = 30em, concept color = color1!50]
+				{
+					node [level 3, text width = 26em, inner sep = 2em] (Définition de l'apprentissage fédéré - 3 - 2) {\huge{${V}_{SUM}$, \\la performances de ${M}_{SUM}$}}
+				}
+				child [grow = -90, level distance = 35em, concept color = color1!50]
+				{
+					node [level 3, text width = 42em, inner sep = 2em] (Définition de l'apprentissage fédéré - 3 - 3) {\huge{$\delta$, un nombre réel non négatif, \\perte de précision d'apprentissage fédéré}}
+				}
 			}
 		}
 	;
-	%rassembler toutes les données
-	%utiliser D=D1∪...∪DN pour former un modèle MSUM
-	%
-	%\left| {V}_{FED} - {V}_{SUM}\right| < \delta
+
 	%(dans lequel) les propriétaires de données forment en collaboration un modèle MFED
-	%(dans lequel) aucun propriétaire de données Fi n'expose ses données Di à d’autres
+	%(dans lequel) 
 	\begin{pgfonlayer}{background}
 		\draw [densely dashed] 
 			;
