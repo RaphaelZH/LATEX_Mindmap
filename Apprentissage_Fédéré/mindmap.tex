@@ -121,23 +121,23 @@
 		}
 	]
 
-	\node [root concept, text width = 20em, inner sep = 0em] (APERÇU)
-		at (-60em, 20em)
+	\node [root concept, text width = 20em, inner sep = 1em] (APERÇU)
+		at (-110em, 40em)
 			{\LARGE{APERÇU DE \\L'APPRENTISSAGE \\FÉDÉRÉ}}
 		child [grow = 90, level distance = 30em, concept color = color1!50]
 			{
-				node [level 1, text width = 18em, inner sep = 0em] (L’idée principale) {\Huge\textsc{L'idée principale}}
-				child [grow = 50, level distance = 30em, concept color = color1!50]
+				node [level 1, text width = 18em, inner sep = 1em] (L’idée principale) {\Huge\textsc{L'idée principale}}
+				child [grow = 45, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 0em] (L’idée principale - 1) {\huge{créer des \\modèles \\d'apprentissage}}
-					child [grow = 0, level distance = 30em, concept color = color1!50]
+					node [level 2, text width = 16em, inner sep = 1em] (L’idée principale - 1) {\huge{créer des \\modèles \\d'apprentissage}}
+					child [grow = 45, level distance = 30em, concept color = color1!50]
 					{
 						node [level 3, text width = 20em, inner sep = 2em] (L’idée principale - 1 - 1) {\LARGE{basés sur \\des données réparties \\sur plusieurs appareils}}
 					}
 				}
-				child [grow = 110, level distance = 30em, concept color = color1!50]
+				child [grow = 90, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 0em] (L’idée principale - 2) {\huge{prévenir les fuites de données}}
+					node [level 2, text width = 16em, inner sep = 1em] (L’idée principale - 2) {\huge{prévenir les fuites de données}}
 				}
 		 	}
 		child [grow = 150, level distance = 30em, concept color = color1!50]
@@ -145,15 +145,15 @@
 				node [level 1, text width = 18em, inner sep = -1em] (Les améliorations concentrées) {\huge\textsc{Les \\améliorations \\concentrées}}
 				child [grow = 90, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 0em] (Les améliorations concentrées - 1) {\huge{la résolution \\des défis \\statistiques}}
+					node [level 2, text width = 16em, inner sep = 1em] (Les améliorations concentrées - 1) {\huge{la résolution \\des défis \\statistiques}}
 				}
 				child [grow = 130, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 0em] (Les améliorations concentrées - 2) {\huge{l'amélioration \\de la sécurité \\dans \\l'apprentissage \\fédéré}}
+					node [level 2, text width = 16em, inner sep = 1em] (Les améliorations concentrées - 2) {\huge{l'amélioration \\de la sécurité \\dans \\l'apprentissage \\fédéré}}
 				}
 				child [grow = 170, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 0em] (Les améliorations concentrées - 3) {\huge{rendre \\l'apprentissage \\fédéré plus \\personnalisable}}
+					node [level 2, text width = 16em, inner sep = 1em] (Les améliorations concentrées - 3) {\huge{rendre \\l'apprentissage \\fédéré plus \\personnalisable}}
 				}
 			}
 		child [grow = -150, level distance = 30em, concept color = color1!50]
@@ -161,7 +161,7 @@
 			node [level 1, text width = 18em, inner sep = -1em] (Définition de l'apprentissage fédéré) {\huge\textsc{Définition de \\l'apprentissage \\fédéré}}
 			child [grow = 150, level distance = 30em, concept color = color1!50, densely dashed]
 			{
-				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1) {\huge{la méthode conventionnelle}}
+				node [level 2, text width = 16em, inner sep = 1em] (Définition de l'apprentissage fédéré - 1) {\huge{la méthode \\conventionnelle}}
 				child [grow = 165, level distance = 40em, concept color = color1!50]
 				{
 					node [level 3, text width = 20em, inner sep = 2em] (Définition de l'apprentissage fédéré - 1 - 1) {\huge{rassembler \\toutes les données}}
@@ -173,7 +173,7 @@
 			}
 			child [grow = 190, level distance = 30em, concept color = color1!50]
 			{
-				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 2) {\huge{un processus d'apprentissage}}
+				node [level 2, text width = 16em, inner sep = 1em] (Définition de l'apprentissage fédéré - 2) {\huge{un processus \\d'apprentissage}}
 				child [grow = 165, level distance = 40em, concept color = color1!50]
 				{
 					node [level 3, text width = 28em, inner sep = 2em] (Définition de l'apprentissage fédéré - 2 - 1) {\huge{les propriétaires de données \\forment en collaboration \\un modèle ${M}_{FED}$}}
@@ -185,25 +185,65 @@
 			}
 			child [grow = 230, level distance = 30em, concept color = color1!50]
 			{
-				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 3) {\LARGE{$\left| {V}_{FED} - {V}_{SUM}\right| < \delta$}}
+				node [level 2, text width = 16em, inner sep = 1em] (Définition de l'apprentissage fédéré - 3) {\LARGE{$\left| {V}_{FED} - {V}_{SUM}\right| < \delta$}}
 				child [grow = 180, level distance = 40em, concept color = color1!50]
 				{
 					node [level 3, text width = 24em, inner sep = 2em] (Définition de l'apprentissage fédéré - 3 - 1) {\huge{${V}_{FED}$, \\la précision de ${M}_{FED}$}}
 				}
-				child [grow = 205, level distance = 30em, concept color = color1!50]
+				child [grow = 205, level distance = 40em, concept color = color1!50]
 				{
 					node [level 3, text width = 26em, inner sep = 2em] (Définition de l'apprentissage fédéré - 3 - 2) {\huge{${V}_{SUM}$, \\la performances de ${M}_{SUM}$}}
 				}
-				child [grow = -90, level distance = 35em, concept color = color1!50]
+				child [grow = -90, level distance = 25em, concept color = color1!50]
 				{
 					node [level 3, text width = 42em, inner sep = 2em] (Définition de l'apprentissage fédéré - 3 - 3) {\huge{$\delta$, un nombre réel non négatif, \\perte de précision d'apprentissage fédéré}}
 				}
 			}
 		}
-	;
-
-	%(dans lequel) les propriétaires de données forment en collaboration un modèle MFED
-	%(dans lequel) 
+		child [grow = -90, level distance = 30em, concept color = color1!50]
+		{
+			node [level 1, text width = 18em, inner sep = -1em] (Confidentialité de l'apprentissage fédéré) {\huge\textsc{Confidentialité \\de \\l'apprentissage \\fédéré}}
+			child [grow = -145, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 1em] (Confidentialité de l'apprentissage fédéré - 1) {\huge{1. calcul \\multiparties \\sécurisées \\(SMC)}}
+			}
+			child [grow = -90, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 1em] (Confidentialité de l'apprentissage fédéré - 2) {\huge{2. confidentialité \\différentielle}}
+			}
+			child [grow = -45, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 1em] (Confidentialité de l'apprentissage fédéré - 3) {\LARGE{3. cryptage homomorphe}}
+			}
+			child [grow = 0, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 1em] (Confidentialité de l'apprentissage fédéré - 4) {\LARGE{une des propriétés \\essentielles de \\l'apprentissage \\fédéré}}
+			}
+		}
+		child [grow = 0, level distance = 30em, concept color = color1!50]
+		{
+			node [level 1, text width = 18em, inner sep = -1em] (Catégorisation de l'apprentissage fédéré) {\huge\textsc{Catégorisation \\de \\l'apprentissage \\fédéré}}
+			child [grow = 0, level distance = 40em, concept color = color1!50]
+			{
+				node [level 2, text width = 30em, inner sep = 2em] (Catégorisation de l'apprentissage fédéré - 1) {\huge{matrice ${D}_{i}$ dénote \\les données de propriétaire {i} \\chaque ligne représente \\un échantillon \\chaque colonne représente \\une caractéristique}}
+				child [grow = 90, level distance = 45em, concept color = color1!50]
+				{
+					node [level 3, text width = 30em, inner sep = 1em] (Catégorisation de l'apprentissage fédéré - 1 - 1) {\LARGE\textsc{Apprentissage fédéré horizontal}\\
+						\includegraphics[width = 1\textwidth]{./figures/Figure 1.png}}
+				}
+				child [grow = 0, level distance = 50em, concept color = color1!50]
+				{
+					node [level 3, text width = 30em, inner sep = 1em] (Catégorisation de l'apprentissage fédéré - 1 - 2) {\LARGE\textsc{Apprentissage fédéré vertical}\\
+						\includegraphics[width = 1\textwidth]{./figures/Figure 2.png}}
+				}
+				child [grow = -90, level distance = 45em, concept color = color1!50]
+				{
+					node [level 3, text width = 30em, inner sep = 1em] (Catégorisation de l'apprentissage fédéré - 1 - 3) {\LARGE\textsc{Apprentissage par transfert fédéré (FTL)}\\
+						\includegraphics[width = 1\textwidth]{./figures/Figure 3.png}}
+				}
+			}
+		}
+	; 
 	\begin{pgfonlayer}{background}
 		\draw [densely dashed] 
 			;
@@ -260,7 +300,7 @@ level 2/.append style =
 ]
 
 \node [root concept, text width = 20em, inner sep = -1em] (LLC)
-at (15em, 35em)
+at (15em, -35em)
 {\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
 	child [grow = -30, level distance = 30em, concept color = color2!50]
 	{
@@ -282,14 +322,14 @@ at (15em, 35em)
 			node [level 2, text width = 16em, inner sep = -1em] (HULIN) {\includegraphics[width = 0.9\textwidth]{./profiles/HULIN.png}}
 		}
 	};
-\node[annotation, left,  concept color = color2, draw = color2!50, fill = color2!5, line width = 0.25em, text width = 17.5em, text = color0, font = \Large\bfseries, inner sep = 1em]
-at (71em, 37.5em)
-{\LARGE\bfseries{M. Thibaud HULIN \\\vspace{0.25em} Directeur de thèse}};
-\begin{pgfonlayer}{background}
-\draw [densely dashed] 
-(Nom de projet)
-	edge [color = color2!, line width = 1em] (LLC);
-\end{pgfonlayer}
+% \node[annotation, left,  concept color = color2, draw = color2!50, fill = color2!5, line width = 0.25em, text width = 17.5em, text = color0, font = \Large\bfseries, inner sep = 1em]
+% at (71em, 37.5em)
+% {\LARGE\bfseries{M. Thibaud HULIN \\\vspace{0.25em} Directeur de thèse}};
+% \begin{pgfonlayer}{background}
+% \draw [densely dashed] 
+% (Nom de projet)
+% 	edge [color = color2!, line width = 1em] (LLC);
+% \end{pgfonlayer}
 \end{scope}
 
 
