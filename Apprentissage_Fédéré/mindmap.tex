@@ -244,11 +244,79 @@
 			}
 		}
 	; 
-	\begin{pgfonlayer}{background}
-		\draw [densely dashed] 
-			;
-	\end{pgfonlayer}
 \end{scope}
+
+
+
+\begin{scope}
+[
+mindmap,
+text = color0,
+grow cyclic,
+every node/.style =
+{
+	concept,
+	concept color = color2!50,
+	text = color0,
+	execute at begin node = \hskip 0pt
+},
+root concept/.append style =
+{
+	concept color = color2,
+	draw = color2!75,
+	fill = color2!10,
+	line width = 1em,
+	text width = 20em,
+	text = color0,
+	font = \LARGE\scshape,
+	inner sep = 0pt
+},
+level 1/.append style =
+{
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.5em,
+	text width = 18em,
+	text = color0,
+	font = \Large\bfseries,
+	inner sep = 0pt
+},
+level 2/.append style =
+{
+	concept color = color2,
+	draw = color2!50,
+	fill = color2!5,
+	line width = 0.5em,
+	text width = 16em,
+	text = color0,
+	font = \large\bfseries,
+	inner sep = 0pt
+}
+]
+
+\node [root concept, text width = 20em, inner sep = 1em] (Défis de base)
+at (15em, 100em)
+{\Huge{Défis de base}}
+	child [grow = 30, level distance = 30em, concept color = color2!50]
+	{
+		node [level 1, text width = 18em, inner sep = 1em] (Communication coûteuse) {\LARGE{Communication \\coûteuse}}
+	}
+	child [grow = 150, level distance = 30em, concept color = color2!50]
+	{
+		node [level 1, text width = 18em, inner sep = 1em] (Hétérogénéité des systèmes) {\LARGE{Hétérogénéité \\des systèmes}}
+	}
+	child [grow = -150, level distance = 30em, concept color = color2!50]
+	{
+		node [level 1, text width = 18em, inner sep = 1em] (Hétérogénéité statistique) {\LARGE{Hétérogénéité \\statistique}}
+	}
+	child [grow = -30, level distance = 30em, concept color = color2!50]
+	{
+		node [level 1, text width = 18em, inner sep = 1em] (Préoccupations en matière de confidentialité) {\LARGE{Préoccupations \\en matière de \\confidentialité}}
+	}
+;
+\end{scope}
+
 
 \end{tikzpicture}
 
