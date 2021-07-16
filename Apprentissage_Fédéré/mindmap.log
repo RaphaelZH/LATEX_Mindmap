@@ -747,4 +747,16 @@ Package rerunfilecheck Info: File `mindmap.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults subs
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21876 strings out of 479699
+ 415588 string characters out of 5889003
+ 797950 words of memory out of 5000000
+ 38732 multiletter control sequences out of 15000+600000
+ 577503 words of font info for 56 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 60i,13n,81p,421b,1852s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on mindmap.pdf (1 page).
