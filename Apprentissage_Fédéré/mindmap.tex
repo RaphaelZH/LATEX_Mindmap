@@ -106,30 +106,90 @@
 				text = color0,
 				font = \large\bfseries,
 				inner sep = 0pt
-			}
+			},
+		level 3/.append style =
+		{
+			concept color = color1,
+			rectangle,
+			draw = color1!50,
+			fill = color1!5,
+			line width = 0.5em,
+			text width = 16em,
+			text = color0,
+			font = \large\bfseries,
+			inner sep = 0pt
+		}
 	]
 
-	\node [root concept, text width = 20em, inner sep = 0em] (UBFC)
+	\node [root concept, text width = 20em, inner sep = 0em] (APERÇU)
 		at (-60em, 20em)
 			{\LARGE{APERÇU DE \\L'APPRENTISSAGE \\FÉDÉRÉ}}
-		child [grow = 30, level distance = 30em, concept color = color1!50]
-			{
-				node [level 1, text width = 18em, inner sep = -1em] (UFC) {\includegraphics[width = 0.6\textwidth]{./logos/logo UFC.png}}
-			}
-		child [grow = -30, level distance = 30em, concept color = color1!50]
-			{
-				node [level 1, text width = 18em, inner sep = -1em] (I-SITE BFC) {\includegraphics[width = 0.6\textwidth]{./logos/logo I-SITE BFC.png}}
-			}
 		child [grow = 90, level distance = 30em, concept color = color1!50]
 			{
-				node [level 1, text width = 18em, inner sep = -1em] (UB) {\includegraphics[width = 0.6\textwidth]{./logos/logo UB.png}}
-			};
+				node [level 1, text width = 18em, inner sep = 0em] (L’idée principale) {\Huge\textsc{L'idée principale}}
+				child [grow = 50, level distance = 30em, concept color = color1!50]
+				{
+					node [level 2, text width = 16em, inner sep = 0em] (L’idée principale - 1) {\huge{créer des \\modèles \\d'apprentissage}}
+					child [grow = 0, level distance = 30em, concept color = color1!50]
+					{
+						node [level 3, text width = 20em, inner sep = 2em] (L’idée principale - 1 - 1) {\LARGE{basés sur \\des données réparties \\sur plusieurs appareils}}
+					}
+				}
+				child [grow = 110, level distance = 30em, concept color = color1!50]
+				{
+					node [level 2, text width = 16em, inner sep = 0em] (L’idée principale - 2) {\huge{prévenir les fuites de données}}
+				}
+		 	}
+		child [grow = 150, level distance = 30em, concept color = color1!50]
+			{
+				node [level 1, text width = 18em, inner sep = -1em] (Les améliorations concentrées) {\huge\textsc{Les \\améliorations \\concentrées}}
+				child [grow = 90, level distance = 30em, concept color = color1!50]
+				{
+					node [level 2, text width = 16em, inner sep = 0em] (Les améliorations concentrées - 1) {\huge{la résolution \\des défis \\statistiques}}
+				}
+				child [grow = 130, level distance = 30em, concept color = color1!50]
+				{
+					node [level 2, text width = 16em, inner sep = 0em] (Les améliorations concentrées - 2) {\huge{l'amélioration \\de la sécurité \\dans \\l'apprentissage \\fédéré}}
+				}
+				child [grow = 170, level distance = 30em, concept color = color1!50]
+				{
+					node [level 2, text width = 16em, inner sep = 0em] (Les améliorations concentrées - 3) {\huge{rendre \\l'apprentissage \\fédéré plus \\personnalisable}}
+				}
+			}
+		child [grow = -150, level distance = 30em, concept color = color1!50]
+		{
+			node [level 1, text width = 18em, inner sep = -1em] (Définition de l'apprentissage fédéré) {\huge\textsc{Définition de \\l'apprentissage \\fédéré}}
+			child [grow = 150, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1) {\huge{la méthode conventionnelle}}
+				child [grow = 160, level distance = 30em, concept color = color1!50]
+				{
+					node [level 3, text width = 20em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1 - 1) {\huge{rassembler \\toutes les données}}
+				}
+				child [grow = -160, level distance = 30em, concept color = color1!50]
+				{
+					node [level 3, text width = 24em, inner sep = 0em] (Définition de l'apprentissage fédéré - 1 - 2) {\huge{utiliser $D = {D}_{1}\cup...\cup{D}_{N}$ \\pour former un modèle ${M}_{SUM}$}}
+				}
+			}
+			child [grow = 195, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 2) {\huge{un processus d'apprentissage}}
+			}
+			child [grow = 240, level distance = 30em, concept color = color1!50]
+			{
+				node [level 2, text width = 16em, inner sep = 0em] (Définition de l'apprentissage fédéré - 3) {\LARGE{$\left| {V}_{FED} - {V}_{SUM}\right| < \delta$}}
+			}
+		}
+	;
+	%rassembler toutes les données
+	%utiliser D=D1∪...∪DN pour former un modèle MSUM
+	%
+	%\left| {V}_{FED} - {V}_{SUM}\right| < \delta
+	%(dans lequel) les propriétaires de données forment en collaboration un modèle MFED
+	%(dans lequel) aucun propriétaire de données Fi n'expose ses données Di à d’autres
 	\begin{pgfonlayer}{background}
 		\draw [densely dashed] 
-			(Nom de projet)
-				edge [color = color1!, line width = 1em] (UBFC)
-				edge [color = color1!, line width = 1em] (UFC)
-				edge [color = color1!, line width = 1em] (I-SITE BFC);
+			;
 	\end{pgfonlayer}
 \end{scope}
 
@@ -211,98 +271,9 @@ at (71em, 37.5em)
 \begin{pgfonlayer}{background}
 \draw [densely dashed] 
 (Nom de projet)
-	edge [color = color2!, line width = 1em] (LLC)
-	edge [color = color2!, line width = 1em] (LECLA)
-	edge [color = color2!, line width = 1em] (MSHE)
-	edge [color = color2!, line width = 1em] (HULIN)
-(MSHE)
-	edge [color = color2!, line width = 1em] (UFC)
-(MSH Dijon)
-	edge [color = color2!, line width = 1em] (UB);
+	edge [color = color2!, line width = 1em] (LLC);
 \end{pgfonlayer}
 \end{scope}
-
-
-\begin{scope}
-[
-mindmap,
-text = color0,
-grow cyclic,
-every node/.style =
-{
-	concept,
-	concept color = color3!50,
-	text = color0,
-	execute at begin node = \hskip 0pt
-},
-root concept/.append style =
-{
-	concept color = color3,
-	draw = color3!75,
-	fill = color3!10,
-	line width = 1em,
-	text width = 20em,
-	text = color0,
-	font = \LARGE\scshape,
-	inner sep = 0pt
-},
-level 1/.append style =
-{
-	concept color = color3,
-	draw = color3!50,
-	fill = color3!5,
-	line width = 0.5em,
-	text width = 18em,
-	text = color0,
-	font = \Large\bfseries,
-	inner sep = 0pt
-},
-level 2/.append style =
-{
-	concept color = color3,
-	draw = color3!50,
-	fill = color3!5,
-	line width = 0.5em,
-	text width = 16em,
-	text = color0,
-	font = \large\bfseries,
-	inner sep = 0pt
-}
-]
-
-\node [root concept, text width = 20em, inner sep = -1em] (HUMANE)
-at (60em, 10em)
-{\Huge{Projet \\HUMANE} \\\vspace{0.5em}\large{\og Humanités Numériques \\pour l'Éducation \fg}}
-child [grow = 45, level distance = 30em, concept color = color3!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (MENJS) {\includegraphics[width = 0.6\textwidth]{./logos/logo MENJS.png}}
-}
-child [grow = -135, level distance = 30em, concept color = color3!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (GIS 2IF) {\includegraphics[width = 0.6\textwidth]{./logos/logo GIS 2IF.png}}
-}
-child [grow = -45, level distance = 30em, concept color = color3!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (canope) {\includegraphics[width = 0.6\textwidth]{./logos/logo canope.png}}
-}
-child [grow = 0, level distance = 30em, concept color = color3!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (DRNE) {\includegraphics[width = 0.6\textwidth]{./logos/logo DRNE.png}}
-}
-child [grow = -90, level distance = 30em, concept color = color3!50]
-{
-	node [level 1, text width = 18em, inner sep = -1em] (humanistica) {\includegraphics[width = 0.6\textwidth]{./logos/logo humanistica.png}}
-};
-\begin{pgfonlayer}{background}
-\draw [densely dashed] 
-(HUMANE)
-	edge [color = color3!, line width = 1em] (Nom de projet);
-\end{pgfonlayer}
-\end{scope}
-
-
-
-
 
 
 \end{tikzpicture}

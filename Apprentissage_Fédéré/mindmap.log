@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  15 JUL 2021 23:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.28)  16 JUL 2021 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -708,12 +708,19 @@ LaTeX Info: Redefining \nameref on input line 32.
 \@outlinefile=\write4
 \openout4 = `mindmap.out'.
 
-File: ./logos/logo UFC.png Graphic file (type bmp)
-<./logos/logo UFC.png>
-File: ./logos/logo I-SITE BFC.png Graphic file (type bmp)
-<./logos/logo I-SITE BFC.png>
-File: ./logos/logo UB.png Graphic file (type bmp)
-<./logos/logo UB.png>
+
+
+LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
+(Font)              using `T1/lmr/bx/n' instead on input line 183.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <20.74> on input line 183.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 183.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 183.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 183.
 File: ./logos/logo LECLA.png Graphic file (type bmp)
 <./logos/logo LECLA.png>
 File: ./logos/logo MSH Dijon.png Graphic file (type bmp)
@@ -724,17 +731,6 @@ File: ./logos/logo ELLIADD.png Graphic file (type bmp)
 <./logos/logo ELLIADD.png>
 File: ./profiles/HULIN.png Graphic file (type bmp)
 <./profiles/HULIN.png>
-File: ./logos/logo MENJS.png Graphic file (type bmp)
-<./logos/logo MENJS.png>
-File: ./logos/logo GIS 2IF.png Graphic file (type bmp)
-<./logos/logo GIS 2IF.png>
-File: ./logos/logo canope.png Graphic file (type bmp)
-<./logos/logo canope.png>
-File: ./logos/logo DRNE.png Graphic file (type bmp)
-<./logos/logo DRNE.png>
-File: ./logos/logo humanistica.png Graphic file (type bmp)
-<./logos/logo humanistica.png>
-
 (/usr/local/texlive/2020/texmf-dist/tex/generic/stringenc/se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
@@ -742,21 +738,25 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
  (./mindmap.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
 Package rerunfilecheck Info: File `mindmap.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 21737 strings out of 479699
- 405789 string characters out of 5889003
- 715873 words of memory out of 5000000
- 38586 multiletter control sequences out of 15000+600000
- 570648 words of font info for 43 fonts, out of 8000000 for 9000
+ 21763 strings out of 479699
+ 408599 string characters out of 5889003
+ 736519 words of memory out of 5000000
+ 38617 multiletter control sequences out of 15000+600000
+ 577503 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,10n,79p,421b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,81p,421b,1758s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on mindmap.pdf (1 page).
