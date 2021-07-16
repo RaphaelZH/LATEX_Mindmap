@@ -31,7 +31,7 @@
 
 \begin{document}
 	
-%\ThisCenterWallPaper{}{./figures/Social_Network_Analysis_Visualization_transparent.png}
+\ThisCenterWallPaper{}{./figures/Social_Network_Analysis_Visualization_transparent.png}
 
 \centering
 
@@ -122,22 +122,22 @@
 	]
 
 	\node [root concept, text width = 20em, inner sep = 1em] (APERÇU)
-		at (-110em, 40em)
+		at (-120em, 60em)
 			{\LARGE{APERÇU DE \\L'APPRENTISSAGE \\FÉDÉRÉ}}
 		child [grow = 90, level distance = 30em, concept color = color1!50]
 			{
-				node [level 1, text width = 18em, inner sep = 1em] (L’idée principale) {\Huge\textsc{L'idée principale}}
+				node [level 1, text width = 18em, inner sep = 1em] (L'idée principale) {\Huge\textsc{L'idée principale}}
 				child [grow = 45, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 1em] (L’idée principale - 1) {\huge{créer des \\modèles \\d'apprentissage}}
+					node [level 2, text width = 16em, inner sep = 1em] (L'idée principale - 1) {\huge{créer des \\modèles \\d'apprentissage}}
 					child [grow = 45, level distance = 30em, concept color = color1!50]
 					{
-						node [level 3, text width = 20em, inner sep = 2em] (L’idée principale - 1 - 1) {\LARGE{basés sur \\des données réparties \\sur plusieurs appareils}}
+						node [level 3, text width = 20em, inner sep = 2em] (L'idée principale - 1 - 1) {\LARGE{basés sur \\des données réparties \\sur plusieurs appareils}}
 					}
 				}
 				child [grow = 90, level distance = 30em, concept color = color1!50]
 				{
-					node [level 2, text width = 16em, inner sep = 1em] (L’idée principale - 2) {\huge{prévenir les fuites de données}}
+					node [level 2, text width = 16em, inner sep = 1em] (L'idée principale - 2) {\huge{prévenir les fuites de données}}
 				}
 		 	}
 		child [grow = 150, level distance = 30em, concept color = color1!50]
@@ -180,7 +180,7 @@
 				}
 				child [grow = 180, level distance = 40em, concept color = color1!50]
 				{
-					node [level 3, text width = 34em, inner sep = 2em] (Définition de l'apprentissage fédéré - 2 - 2) {\huge{aucun propriétaire de données ${F}_{i}$ \\n'expose ses données ${D}_{i}$ à d’autres}}
+					node [level 3, text width = 34em, inner sep = 2em] (Définition de l'apprentissage fédéré - 2 - 2) {\huge{aucun propriétaire de données ${F}_{i}$ \\n'expose ses données ${D}_{i}$ à d'autres}}
 				}
 			}
 			child [grow = 230, level distance = 30em, concept color = color1!50]
@@ -249,89 +249,6 @@
 			;
 	\end{pgfonlayer}
 \end{scope}
-
-
-
-\begin{scope}
-[
-mindmap,
-text = color0,
-grow cyclic,
-every node/.style =
-{
-	concept,
-	concept color = color2!50,
-	text = color0,
-	execute at begin node = \hskip 0pt
-},
-root concept/.append style =
-{
-	concept color = color2,
-	draw = color2!75,
-	fill = color2!10,
-	line width = 1em,
-	text width = 20em,
-	text = color0,
-	font = \LARGE\scshape,
-	inner sep = 0pt
-},
-level 1/.append style =
-{
-	concept color = color2,
-	draw = color2!50,
-	fill = color2!5,
-	line width = 0.5em,
-	text width = 18em,
-	text = color0,
-	font = \Large\bfseries,
-	inner sep = 0pt
-},
-level 2/.append style =
-{
-	concept color = color2,
-	draw = color2!50,
-	fill = color2!5,
-	line width = 0.5em,
-	text width = 16em,
-	text = color0,
-	font = \large\bfseries,
-	inner sep = 0pt
-}
-]
-
-\node [root concept, text width = 20em, inner sep = -1em] (LLC)
-at (15em, -35em)
-{\LARGE{Pôle Lettres, \\Langues et \\Communication} \\\vspace{1em} \Huge{- LLC}}
-	child [grow = -30, level distance = 30em, concept color = color2!50]
-	{
-		node [level 1, text width = 18em, inner sep = -1em] (LECLA) {\includegraphics[width = 0.6\textwidth]{./logos/logo LECLA.png}}
-	}
-	child [grow = 150, level distance = 30em, concept color = color2!50]
-	{
-		node [level 1, text width = 18em, inner sep = -1em] (MSH Dijon) {\includegraphics[width = 0.6\textwidth]{./logos/logo MSH Dijon.png}}
-	}
-	child [grow = -150, level distance = 30em, concept color = color2!50]
-	{
-		node [level 1, text width = 18em, inner sep = -1em] (MSHE) {\includegraphics[width = 0.6\textwidth]{./logos/logo MSHE.png}}
-	}
-	child [grow = 30, level distance = 30em, concept color = color2!50]
-	{
-		node [level 1, text width = 18em, inner sep = -1em] (ELLIADD) {\includegraphics[width = 0.6\textwidth]{./logos/logo ELLIADD.png}}
-		child [grow = 0, level distance = 30em, concept color = color2!50]
-		{
-			node [level 2, text width = 16em, inner sep = -1em] (HULIN) {\includegraphics[width = 0.9\textwidth]{./profiles/HULIN.png}}
-		}
-	};
-% \node[annotation, left,  concept color = color2, draw = color2!50, fill = color2!5, line width = 0.25em, text width = 17.5em, text = color0, font = \Large\bfseries, inner sep = 1em]
-% at (71em, 37.5em)
-% {\LARGE\bfseries{M. Thibaud HULIN \\\vspace{0.25em} Directeur de thèse}};
-% \begin{pgfonlayer}{background}
-% \draw [densely dashed] 
-% (Nom de projet)
-% 	edge [color = color2!, line width = 1em] (LLC);
-% \end{pgfonlayer}
-\end{scope}
-
 
 \end{tikzpicture}
 
